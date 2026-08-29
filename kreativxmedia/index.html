@@ -1,0 +1,3088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kreativx — Bold Creative & Digital Agency</title>
+  <meta name="description" content="kreativx: We build bold brands, high-performance digital experiences, websites, animations, and creative strategies designed to make businesses impossible to ignore.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logo.png?v=12.0">
+
+  <!-- Google Fonts: Geist (by Vercel) & Geist Mono, Plus Jakarta Sans, Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Geist+Mono:wght@100..900&family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+  <!-- Immediate Scroll Reset on Refresh / Reload -->
+  <script>
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  </script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=103.0">
+</head>
+<body>
+
+  <!-- Custom Interactive Cursor -->
+  <div class="custom-cursor" id="customCursor"></div>
+  <div class="custom-cursor-follower" id="customCursorFollower"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <!-- Agency Logo / Brand -->
+      <a href="#" class="brand-logo" aria-label="KREATIVX Home">
+        <img src="assets/logo.png?v=12.0" alt="KREATIVX logo" class="brand-logo-img" decoding="async">
+        <span>KREATIV<span class="logo-x">X</span></span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <nav class="nav-menu" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#team" class="nav-link">Team</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <button class="btn btn-primary open-modal-btn" data-modal="inquiryModal">
+          <span>Let's Talk</span>
+          <span class="btn-arrow">→</span>
+        </button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle Navigation Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Fullscreen Navigation Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close Navigation Menu" onclick="closeMobileMenu()">
+      ✕
+    </button>
+    <div class="mobile-nav-links">
+      <a href="#about" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span>About</span>
+        <span class="num">01</span>
+      </a>
+      <a href="#services" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span>Services</span>
+        <span class="num">02</span>
+      </a>
+      <a href="#projects" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span>Projects</span>
+        <span class="num">03</span>
+      </a>
+      <a href="#team" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span>Team</span>
+        <span class="num">04</span>
+      </a>
+      <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">
+        <span>Contact</span>
+        <span class="num">05</span>
+      </a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <button class="btn btn-primary btn-lg open-modal-btn" data-modal="inquiryModal" onclick="closeMobileMenu()">
+        <span>Start A Project</span>
+        <span>→</span>
+      </button>
+      <div class="footer-local-time">
+        <span>GLOBAL CREATIVE PRACTICE</span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- ==========================================================================
+       ABOUT / CINEMATIC COLOR TRANSFORMATION MANIFESTO (BLACK -> WHITE -> RED)
+       ========================================================================== -->
+  <section class="manifesto-scroll-track" id="about">
+    <div class="manifesto-sticky-viewport">
+      
+      <!-- LAYER 1: BASE SOLID BLACK LAYER (#0A0A0A) with White Text -->
+      <div class="manifesto-layer layer-black">
+        <div class="manifesto-content-container">
+          <div class="manifesto-quote-wrap">
+            <div class="manifesto-block block-top">
+              <h2 class="manifesto-line line-1 hero-entrance-anim hero-entrance-stagger-1">WE DON'T JUST</h2>
+              <h2 class="manifesto-line line-2 hero-entrance-anim hero-entrance-stagger-2">MAKE THINGS LOOK GOOD.</h2>
+            </div>
+            <div class="manifesto-block block-bottom">
+              <h2 class="manifesto-line line-3 hero-entrance-anim hero-entrance-stagger-3">WE MAKE THEM</h2>
+              <h2 class="manifesto-line line-4 line-accent hero-entrance-anim hero-entrance-stagger-4">IMPOSSIBLE TO IGNORE.</h2>
+            </div>
+            <div class="manifesto-actions-row hero-entrance-anim hero-entrance-stagger-5">
+              <button class="btn btn-primary open-modal-btn" data-modal="inquiryModal">
+                <span>Start A Project</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <a href="#services" class="btn btn-secondary">
+                <span>Our Capabilities</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LAYER 2: RISING LIQUID WHITE WAVE LAYER (#F7F7F5) with Black Text -->
+      <div class="manifesto-layer layer-white" id="manifestoWhiteLayer">
+        <div class="manifesto-content-container">
+          <div class="manifesto-quote-wrap">
+            <div class="manifesto-block block-top">
+              <h2 class="manifesto-line line-1">WE DON'T JUST</h2>
+              <h2 class="manifesto-line line-2">MAKE THINGS LOOK GOOD.</h2>
+            </div>
+            <div class="manifesto-block block-bottom">
+              <h2 class="manifesto-line line-3">WE MAKE THEM</h2>
+              <h2 class="manifesto-line line-4 line-accent">IMPOSSIBLE TO IGNORE.</h2>
+            </div>
+            <div class="manifesto-actions-row">
+              <button class="btn btn-primary open-modal-btn" data-modal="inquiryModal">
+                <span>Start A Project</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <a href="#services" class="btn btn-secondary">
+                <span>Our Capabilities</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LAYER 3: RISING LIQUID RED WAVE LAYER (#E31B23) with White Text -->
+      <div class="manifesto-layer layer-red" id="manifestoRedLayer">
+        <div class="manifesto-content-container">
+          <div class="manifesto-quote-wrap">
+            <div class="manifesto-block block-top">
+              <h2 class="manifesto-line line-1">WE DON'T JUST</h2>
+              <h2 class="manifesto-line line-2">MAKE THINGS LOOK GOOD.</h2>
+            </div>
+            <div class="manifesto-block block-bottom">
+              <h2 class="manifesto-line line-3">WE MAKE THEM</h2>
+              <h2 class="manifesto-line line-4 line-accent">IMPOSSIBLE TO IGNORE.</h2>
+            </div>
+            <div class="manifesto-actions-row">
+              <button class="btn btn-primary open-modal-btn" data-modal="inquiryModal">
+                <span>Start A Project</span>
+                <i data-lucide="arrow-right"></i>
+              </button>
+              <a href="#services" class="btn btn-secondary">
+                <span>Our Capabilities</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ==========================================================================
+       STATISTICS SECTION — BLACK, WHITE & THICK RED
+       ========================================================================== -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <!-- Stat Item 1 -->
+        <div class="stat-card">
+          <div class="stat-number">
+            <span class="counter" data-target="10">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <div class="stat-label">Years of Creative Experience</div>
+        </div>
+
+        <!-- Stat Item 2 -->
+        <div class="stat-card">
+          <div class="stat-number">
+            <span class="counter" data-target="100">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <div class="stat-label">Projects Delivered Worldwide</div>
+        </div>
+
+        <!-- Stat Item 3 -->
+        <div class="stat-card">
+          <div class="stat-number">
+            <span class="counter" data-target="50">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <div class="stat-label">Happy Global Clients</div>
+        </div>
+
+        <!-- Stat Item 4 -->
+        <div class="stat-card">
+          <div class="stat-number">
+            <span class="counter" data-target="15">0</span>
+            <span class="stat-plus">+</span>
+          </div>
+          <div class="stat-label">Industries Revolutionized</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+  <!-- ==========================================================================
+       SERVICES SECTION — 8 TACTILE CAPABILITIES WITH HOVER SHAKE
+       ========================================================================== -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="services-header-row">
+        <div>
+          <div class="section-label">
+            <span>WHAT WE DO</span>
+          </div>
+          <h2 class="services-title">CORE CAPABILITIES</h2>
+        </div>
+        <p style="max-width: 440px; color: var(--text-muted); font-size: 1.05rem;">
+          End-to-end creative and digital engineering tailored for visionary brands seeking aesthetic dominance.
+        </p>
+      </div>
+
+      <!-- Pinboard Services Board (3 / 3 / 2 Layout) -->
+      <div class="pinboard-services-wrapper">
+        
+        <!-- ROW 1: 3 Cards (01, 02, 03) -->
+        <div class="pinboard-row">
+          
+          <!-- 01: Graphic Design -->
+          <div class="pinned-service-card theme-green" style="--card-rot: -2deg;" onclick="openServiceInquiry('Graphic Design')">
+            <div class="card-pushpin pin-green"></div>
+            <div class="pin-card-top">
+              <span class="pin-card-num">01</span>
+              <div class="pin-card-icon-box">
+                <!-- Adobe Photoshop Icon (Ps) -->
+                <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="10" fill="#001E36" stroke="#31A8FF" stroke-width="1.5"/>
+                  <path d="M14 14H21.5C25.2 14 27.5 16.2 27.5 19.5C27.5 22.9 25 25.1 21.3 25.1H17.5V34H14V14ZM17.5 22H21C23 22 24 21 24 19.5C24 18.1 22.9 17.1 21 17.1H17.5V22Z" fill="#31A8FF"/>
+                  <path d="M33.6 23.5C31 23.5 29.5 24.9 29.5 27.1C29.5 30.5 34.8 30.1 34.8 32C34.8 32.6 34.2 33 33.2 33C32.1 33 30.7 32.4 29.8 31.7L28.5 34.1C29.8 35.2 31.6 35.8 33.2 35.8C36 35.8 37.6 34.3 37.6 32.1C37.6 28.5 32.3 29.1 32.3 27.3C32.3 26.8 32.8 26.3 33.6 26.3C34.5 26.3 35.7 26.8 36.5 27.4L37.6 25.1C36.5 24.1 35.1 23.5 33.6 23.5Z" fill="#31A8FF"/>
+                </svg>
+              </div>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-card-title">Graphic Design</h3>
+              <p class="pin-card-desc">Bold visuals that communicate your brand's story with uncompromising craft.</p>
+            </div>
+            <div style="display:flex; justify-content:flex-end;">
+              <div style="width:26px; height:26px; border-radius:50%; background:#16A34A; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">↗</div>
+            </div>
+          </div>
+
+          <!-- 02: Video Production & Editing -->
+          <div class="pinned-service-card theme-red" style="--card-rot: 1.8deg;" onclick="openServiceInquiry('Video Production & Editing')">
+            <div class="card-pushpin pin-red"></div>
+            <div class="pin-card-top">
+              <span class="pin-card-num">02</span>
+              <div class="pin-card-icon-box">
+                <!-- Adobe Premiere Pro Icon (Pr) -->
+                <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="10" fill="#2A003B" stroke="#EA77FF" stroke-width="1.5"/>
+                  <path d="M14 14H21.5C25.2 14 27.5 16.2 27.5 19.5C27.5 22.9 25 25.1 21.3 25.1H17.5V34H14V14ZM17.5 22H21C23 22 24 21 24 19.5C24 18.1 22.9 17.1 21 17.1H17.5V22Z" fill="#EA77FF"/>
+                  <path d="M35 23.6C33.8 23.6 32.7 24.3 32.2 25.3L32 23.9H29.2V34H32.4V29.2C32.4 27.6 33.2 26.5 34.6 26.5C35 26.5 35.4 26.6 35.7 26.8L36.5 23.8C36 23.7 35.5 23.6 35 23.6Z" fill="#EA77FF"/>
+                </svg>
+              </div>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-card-title">Video Production &amp; Editing</h3>
+              <p class="pin-card-desc">Cinematic storytelling with perfect cuts, commercial color grading and sound design.</p>
+            </div>
+            <div style="display:flex; justify-content:space-between; align-items:center;">
+              <div style="display:flex; gap:3px; align-items:center;">
+                <span style="font-size:0.625rem; color:#DC2626;">▶</span>
+                <div style="width:50px; height:6px; background:#FCA5A5; border-radius:3px;"></div>
+              </div>
+              <div style="width:26px; height:26px; border-radius:50%; background:#DC2626; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">↗</div>
+            </div>
+          </div>
+
+          <!-- 03: Brand Identity & Logo Design -->
+          <div class="pinned-service-card theme-purple" style="--card-rot: -1.2deg;" onclick="openServiceInquiry('Brand Identity & Logo Design')">
+            <div class="card-pushpin pin-purple"></div>
+            <div class="pin-card-top">
+              <span class="pin-card-num">03</span>
+              <div class="pin-card-icon-box">
+                <!-- Adobe Illustrator Icon (Ai) -->
+                <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="10" fill="#261300" stroke="#FF9A00" stroke-width="1.5"/>
+                  <path d="M18.8 14H15.1L9.5 34H13L14.2 29.5H19.8L21 34H24.5L18.8 14ZM15 26.4L17 19.1L19 26.4H15Z" fill="#FF9A00"/>
+                  <circle cx="28.8" cy="18" r="1.9" fill="#FF9A00"/>
+                  <rect x="27.3" y="22.5" width="3" height="11.5" rx="0.5" fill="#FF9A00"/>
+                </svg>
+              </div>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-card-title">Brand Identity &amp; Logo Design</h3>
+              <p class="pin-card-desc">We craft distinctive identities, custom typography and guidelines that leave a lasting impression.</p>
+            </div>
+            <div style="display:flex; justify-content:flex-end;">
+              <div style="width:26px; height:26px; border-radius:50%; background:#9333EA; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">↗</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ROW 2: 3 Cards (04, 05, 06) -->
+        <div class="pinboard-row">
+
+          <!-- 04: Web, 2D & 3D Experiences -->
+          <div class="pinned-service-card theme-blue" style="--card-rot: 2deg;" onclick="openServiceInquiry('Web, 2D & 3D Experiences')">
+            <div class="card-pushpin pin-blue"></div>
+            <div class="pin-card-top">
+              <span class="pin-card-num">04</span>
+              <div class="pin-card-icon-box">
+                <!-- Browser Window & 3D Cube -->
+                <div style="width:48px; height:42px; border:1px solid #93C5FD; border-radius:6px; background:#FFFFFF; padding:3px; display:flex; flex-direction:column; gap:2px; box-shadow:0 4px 10px rgba(37,99,235,0.1);">
+                  <div style="display:flex; gap:2px;">
+                    <span style="width:4px; height:4px; border-radius:50%; background:#EF4444;"></span>
+                    <span style="width:4px; height:4px; border-radius:50%; background:#F59E0B;"></span>
+                    <span style="width:4px; height:4px; border-radius:50%; background:#10B981;"></span>
+                  </div>
+                  <div style="flex:1; background:linear-gradient(135deg, #DBEAFE, #93C5FD); border-radius:3px; display:flex; align-items:center; justify-content:center; font-size:0.6rem; color:#1D4ED8; font-weight:900;">
+                    3D
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-card-title">Web, 2D &amp; 3D Experiences</h3>
+              <p class="pin-card-desc">Interactive websites, spatial computing and immersive 2D/3D WebGL digital experiences.</p>
+            </div>
+            <div style="display:flex; justify-content:flex-end;">
+              <div style="width:26px; height:26px; border-radius:50%; background:#2563EB; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">↗</div>
+            </div>
+          </div>
+
+          <!-- 05: Mobile App Development -->
+          <div class="pinned-service-card theme-yellow" style="--card-rot: -1.5deg;" onclick="openServiceInquiry('Mobile App Development')">
+            <div class="card-pushpin pin-yellow"></div>
+            <div class="pin-card-top">
+              <span class="pin-card-num">05</span>
+              <div class="pin-card-icon-box">
+                <!-- Phone App Mockup -->
+                <div style="width:30px; height:48px; border:2px solid #080808; border-radius:8px; background:#FFFFFF; padding:2px; display:flex; flex-direction:column; gap:2px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+                  <div style="width:10px; height:2px; background:#080808; border-radius:2px; margin:0 auto;"></div>
+                  <div style="width:100%; height:12px; background:#FEF08A; border-radius:3px;"></div>
+                  <div style="width:100%; height:18px; background:#F1F5F9; border-radius:3px;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-card-title">Mobile App Development</h3>
+              <p class="pin-card-desc">Powerful native iOS &amp; Android applications built for peak performance, fluid UX and scale.</p>
+            </div>
+            <div style="display:flex; justify-content:flex-end;">
+              <div style="width:26px; height:26px; border-radius:50%; background:#D97706; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">↗</div>
+            </div>
+          </div>
+
+          <!-- 06: AI Automation & Integrations -->
+          <div class="pinned-service-card theme-teal" style="--card-rot: 1.5deg;" onclick="openServiceInquiry('AI Automation & Integrations')">
+            <div class="card-pushpin pin-teal"></div>
+            <div class="pin-card-top">
+              <span class="pin-card-num">06</span>
+              <div class="pin-card-icon-box">
+                <!-- AI Hub Node Graphic -->
+                <div style="width:44px; height:44px; border-radius:10px; background:#0D9488; color:#FFFFFF; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:1.1rem; box-shadow:0 4px 12px rgba(13,148,136,0.3);">
+                  ⚙️
+                </div>
+              </div>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-card-title">AI Automation &amp; Integrations</h3>
+              <p class="pin-card-desc">AI chatbots, WhatsApp automations, Instagram pipelines, intelligent CRM sync and custom LLM agents.</p>
+            </div>
+            <div style="display:flex; justify-content:flex-end;">
+              <div style="width:26px; height:26px; border-radius:50%; background:#0D9488; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">↗</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ROW 3: 2 Cards (07, 08) Centered -->
+        <div class="pinboard-row row-3">
+
+          <!-- 07: Digital Marketing & Growth -->
+          <div class="pinned-service-card theme-pink" style="--card-rot: -2deg;" onclick="openServiceInquiry('Digital Marketing & Growth')">
+            <div class="card-pushpin pin-pink"></div>
+            <div class="pin-card-top">
+              <span class="pin-card-num">07</span>
+              <div class="pin-card-icon-box">
+                <!-- Growth Chart Vector -->
+                <div style="display:flex; flex-direction:column; align-items:flex-end;">
+                  <span style="font-size:1.25rem; color:#DB2777; line-height:1;">↗</span>
+                  <div style="display:flex; gap:2px; align-items:flex-end; height:24px;">
+                    <div style="width:5px; height:10px; background:#FBCFE8; border-radius:1px;"></div>
+                    <div style="width:5px; height:16px; background:#F472B6; border-radius:1px;"></div>
+                    <div style="width:5px; height:24px; background:#DB2777; border-radius:1px;"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-card-title">Digital Marketing &amp; Growth</h3>
+              <p class="pin-card-desc">Data-driven growth strategies, high-conversion acquisition funnels that scale enterprise ROI.</p>
+            </div>
+            <div style="display:flex; justify-content:flex-end;">
+              <div style="width:26px; height:26px; border-radius:50%; background:#DB2777; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">↗</div>
+            </div>
+          </div>
+
+          <!-- 08: 2D & 3D Animation -->
+          <div class="pinned-service-card theme-lime" style="--card-rot: 1.8deg;" onclick="openServiceInquiry('2D & 3D Animation')">
+            <div class="card-pushpin pin-lime"></div>
+            <div class="pin-card-top">
+              <span class="pin-card-num">08</span>
+              <div class="pin-card-icon-box">
+                <!-- Autodesk Maya Icon (M) -->
+                <svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="48" height="48" rx="10" fill="#031A24" stroke="#00E5FF" stroke-width="1.5"/>
+                  <path d="M11 35L17 13L24 24L20 35H11Z" fill="#00B4D8"/>
+                  <path d="M24 24L17 13L31 13L24 24Z" fill="#90E0EF"/>
+                  <path d="M37 35L31 13L24 24L28 35H37Z" fill="#0077B6"/>
+                  <path d="M20 35L24 24L28 35H20Z" fill="#0096C7"/>
+                </svg>
+              </div>
+            </div>
+            <div class="pin-card-body">
+              <h3 class="pin-card-title">2D &amp; 3D Animation</h3>
+              <p class="pin-card-desc">Bringing ideas to life with photorealistic 3D motion, kinetic typography and stunning CGI visuals.</p>
+            </div>
+            <div style="display:flex; justify-content:flex-end;">
+              <div style="width:26px; height:26px; border-radius:50%; background:#65A30D; color:#fff; display:flex; align-items:center; justify-content:center; font-size:0.75rem;">↗</div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       TOOLS & SKILLS WE USE — INFINITE SCROLLING TICKER (BOTTOM OF SERVICES)
+       ========================================================================== -->
+                  <div class="tools-marquee-section" aria-label="Tools and technologies we use">
+    <div class="tools-track">
+      
+      <!-- Tools Group -->
+      <div class="tools-group">
+        <!-- Figma -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/><path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/><path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/><path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/><path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/></svg>
+          </span>
+          <span>Figma</span>
+        </div>
+
+        <!-- Photoshop -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/photoshop.png" alt="Photoshop" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>Photoshop</span>
+        </div>
+
+        <!-- Illustrator -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/illustrator.png" alt="Illustrator" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>Illustrator</span>
+        </div>
+
+        <!-- Premiere Pro -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/premiere-pro.png" alt="Premiere Pro" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>Premiere Pro</span>
+        </div>
+
+        <!-- After Effects -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/after-effects.png" alt="After Effects" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>After Effects</span>
+        </div>
+
+        <!-- Blender 3D -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/blender.png" alt="Blender 3D" width="34" height="34" style="border-radius: 50%;" loading="lazy" decoding="async">
+          </span>
+          <span>Blender 3D</span>
+        </div>
+
+        <!-- React -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="#61DAFB" stroke-width="1.7"/><ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="#61DAFB" stroke-width="1.7" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="#61DAFB" stroke-width="1.7" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="2.4" fill="#61DAFB"/></svg>
+          </span>
+          <span>React</span>
+        </div>
+
+        <!-- Next.js -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/nextjs.png" alt="Next.js" width="34" height="34" style="border-radius: 50%;" loading="lazy" decoding="async">
+          </span>
+          <span>Next.js</span>
+        </div>
+
+        <!-- Node.js -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/nodejs.png" alt="Node.js" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>Node.js</span>
+        </div>
+
+        <!-- Python -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9 2C6.4 2 6.8 4.4 6.8 4.4L6.8 6.9H12.1V7.7H4.3C2 7.7 2 11.2 2 11.2C2 13.5 3.3 14.3 4.3 14.3H5.9V12.1C5.9 9.5 8.3 9.5 8.3 9.5H13.6C15.8 9.5 15.8 7.3 15.8 7.3V4.4C15.8 2 11.9 2 11.9 2ZM9.5 3.5C10.2 3.5 10.7 4 10.7 4.7C10.7 5.4 10.2 5.9 9.5 5.9C8.8 5.9 8.3 5.4 8.3 4.7C8.3 4 8.8 3.5 9.5 3.5Z" fill="#3776AB"/><path d="M12.1 22C17.6 22 17.2 19.6 17.2 19.6L17.2 17.1H11.9V16.3H19.7C22 16.3 22 12.8 22 12.8C22 10.5 20.7 9.7 19.7 9.7H18.1V11.9C18.1 14.5 15.7 14.5 15.7 14.5H10.4C8.2 14.5 8.2 16.7 8.2 16.7V19.6C8.2 22 12.1 22 12.1 22ZM14.5 20.5C13.8 20.5 13.3 20 13.3 19.3C13.3 18.6 13.8 18.1 14.5 18.1C15.2 18.1 15.7 18.6 15.7 19.3C15.7 20 15.2 20.5 14.5 20.5Z" fill="#FFD43B"/></svg>
+          </span>
+          <span>Python</span>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/postgresql.png" alt="PostgreSQL" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>PostgreSQL</span>
+        </div>
+
+        <!-- Firebase -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/firebase.png" alt="Firebase" width="34" height="34" style="border-radius: 50%;" loading="lazy" decoding="async">
+          </span>
+          <span>Firebase</span>
+        </div>
+
+        <!-- OpenAI -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.28 9.82a5.98 5.98 0 0 0-.52-4.91 6.05 6.05 0 0 0-6.5-2.9 6.07 6.07 0 0 0-10.28 2.17 5.98 5.98 0 0 0-4 2.9 6.05 6.05 0 0 0 .74 7.1 5.98 5.98 0 0 0 .51 4.91 6.05 6.05 0 0 0 6.51 2.9A5.98 5.98 0 0 0 13.26 24a6.06 6.06 0 0 0 5.77-4.21 5.99 5.99 0 0 0 4-2.9 6.06 6.06 0 0 0-.75-7.07zm-9.02 12.61a4.48 4.48 0 0 1-2.88-1.04l.14-.08 4.78-2.76a.79.79 0 0 0 .39-.68v-6.74l2.02 1.17a.07.07 0 0 1 .04.05v5.58a4.5 4.5 0 0 1-4.49 4.5zm-9.66-4.13a4.47 4.47 0 0 1-.53-3.01l.14.08 4.78 2.76a.77.77 0 0 0 .78 0l5.84-3.37v2.33a.08.08 0 0 1-.03.06L9.74 19.95a4.5 4.5 0 0 1-6.14-1.65zM2.34 7.9a4.49 4.49 0 0 1 2.37-1.98v5.69a.77.77 0 0 0 .39.67l5.81 3.36-2.02 1.17a.08.08 0 0 1-.07 0L4.09 14A4.5 4.5 0 0 1 2.34 7.87zm16.6 3.85L13.1 8.36 15.12 7.2a.08.08 0 0 1 .07 0l4.83 2.79a4.49 4.49 0 0 1-.68 8.1v-5.67a.79.79 0 0 0-.4-.67zm2.01-3.02l-.14-.09-4.77-2.78a.78.78 0 0 0-.79 0L9.41 9.23V6.9a.07.07 0 0 1 .03-.06l4.83-2.79a4.5 4.5 0 0 1 6.68 4.66zM8.31 12.86l-2.02-1.16a.08.08 0 0 1-.04-.06V6.07a4.5 4.5 0 0 1 7.38-3.45l-.14.08-4.79 2.76a.79.79 0 0 0-.39.68v6.72zm1.1-2.36l2.6-1.5 2.6 1.5v3l-2.6 1.5-2.6-1.5z" fill="#10A37F"/></svg>
+          </span>
+          <span>OpenAI</span>
+        </div>
+
+        <!-- Claude AI -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z" fill="#D97706"/></svg>
+          </span>
+          <span>Claude AI</span>
+        </div>
+
+        <!-- WordPress -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/wordpress.png" alt="WordPress" width="34" height="34" style="border-radius: 50%;" loading="lazy" decoding="async">
+          </span>
+          <span>WordPress</span>
+        </div>
+      </div>
+
+      <!-- Tools Group -->
+      <div class="tools-group">
+        <!-- Figma -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38C23.2533 38 19 33.7467 19 28.5Z" fill="#1ABCFE"/><path d="M0 47.5C0 42.2533 4.25329 38 9.5 38H19V47.5C19 52.7467 14.7467 57 9.5 57C4.25329 57 0 52.7467 0 47.5Z" fill="#0ACF83"/><path d="M19 0V19H28.5C33.7467 19 38 14.7467 38 9.5C38 4.25329 33.7467 0 28.5 0H19Z" fill="#FF7262"/><path d="M0 9.5C0 14.7467 4.25329 19 9.5 19H19V0H9.5C4.25329 0 0 4.25329 0 9.5Z" fill="#F24E1E"/><path d="M0 28.5C0 33.7467 4.25329 38 9.5 38H19V19H9.5C4.25329 19 0 23.2533 0 28.5Z" fill="#A259FF"/></svg>
+          </span>
+          <span>Figma</span>
+        </div>
+
+        <!-- Photoshop -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/photoshop.png" alt="Photoshop" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>Photoshop</span>
+        </div>
+
+        <!-- Illustrator -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/illustrator.png" alt="Illustrator" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>Illustrator</span>
+        </div>
+
+        <!-- Premiere Pro -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/premiere-pro.png" alt="Premiere Pro" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>Premiere Pro</span>
+        </div>
+
+        <!-- After Effects -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/after-effects.png" alt="After Effects" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>After Effects</span>
+        </div>
+
+        <!-- Blender 3D -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/blender.png" alt="Blender 3D" width="34" height="34" style="border-radius: 50%;" loading="lazy" decoding="async">
+          </span>
+          <span>Blender 3D</span>
+        </div>
+
+        <!-- React -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="#61DAFB" stroke-width="1.7"/><ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="#61DAFB" stroke-width="1.7" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" stroke="#61DAFB" stroke-width="1.7" transform="rotate(120 12 12)"/><circle cx="12" cy="12" r="2.4" fill="#61DAFB"/></svg>
+          </span>
+          <span>React</span>
+        </div>
+
+        <!-- Next.js -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/nextjs.png" alt="Next.js" width="34" height="34" style="border-radius: 50%;" loading="lazy" decoding="async">
+          </span>
+          <span>Next.js</span>
+        </div>
+
+        <!-- Node.js -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/nodejs.png" alt="Node.js" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>Node.js</span>
+        </div>
+
+        <!-- Python -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11.9 2C6.4 2 6.8 4.4 6.8 4.4L6.8 6.9H12.1V7.7H4.3C2 7.7 2 11.2 2 11.2C2 13.5 3.3 14.3 4.3 14.3H5.9V12.1C5.9 9.5 8.3 9.5 8.3 9.5H13.6C15.8 9.5 15.8 7.3 15.8 7.3V4.4C15.8 2 11.9 2 11.9 2ZM9.5 3.5C10.2 3.5 10.7 4 10.7 4.7C10.7 5.4 10.2 5.9 9.5 5.9C8.8 5.9 8.3 5.4 8.3 4.7C8.3 4 8.8 3.5 9.5 3.5Z" fill="#3776AB"/><path d="M12.1 22C17.6 22 17.2 19.6 17.2 19.6L17.2 17.1H11.9V16.3H19.7C22 16.3 22 12.8 22 12.8C22 10.5 20.7 9.7 19.7 9.7H18.1V11.9C18.1 14.5 15.7 14.5 15.7 14.5H10.4C8.2 14.5 8.2 16.7 8.2 16.7V19.6C8.2 22 12.1 22 12.1 22ZM14.5 20.5C13.8 20.5 13.3 20 13.3 19.3C13.3 18.6 13.8 18.1 14.5 18.1C15.2 18.1 15.7 18.6 15.7 19.3C15.7 20 15.2 20.5 14.5 20.5Z" fill="#FFD43B"/></svg>
+          </span>
+          <span>Python</span>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/postgresql.png" alt="PostgreSQL" width="34" height="34" style="border-radius: 8px;" loading="lazy" decoding="async">
+          </span>
+          <span>PostgreSQL</span>
+        </div>
+
+        <!-- Firebase -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/firebase.png" alt="Firebase" width="34" height="34" style="border-radius: 50%;" loading="lazy" decoding="async">
+          </span>
+          <span>Firebase</span>
+        </div>
+
+        <!-- OpenAI -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.28 9.82a5.98 5.98 0 0 0-.52-4.91 6.05 6.05 0 0 0-6.5-2.9 6.07 6.07 0 0 0-10.28 2.17 5.98 5.98 0 0 0-4 2.9 6.05 6.05 0 0 0 .74 7.1 5.98 5.98 0 0 0 .51 4.91 6.05 6.05 0 0 0 6.51 2.9A5.98 5.98 0 0 0 13.26 24a6.06 6.06 0 0 0 5.77-4.21 5.99 5.99 0 0 0 4-2.9 6.06 6.06 0 0 0-.75-7.07zm-9.02 12.61a4.48 4.48 0 0 1-2.88-1.04l.14-.08 4.78-2.76a.79.79 0 0 0 .39-.68v-6.74l2.02 1.17a.07.07 0 0 1 .04.05v5.58a4.5 4.5 0 0 1-4.49 4.5zm-9.66-4.13a4.47 4.47 0 0 1-.53-3.01l.14.08 4.78 2.76a.77.77 0 0 0 .78 0l5.84-3.37v2.33a.08.08 0 0 1-.03.06L9.74 19.95a4.5 4.5 0 0 1-6.14-1.65zM2.34 7.9a4.49 4.49 0 0 1 2.37-1.98v5.69a.77.77 0 0 0 .39.67l5.81 3.36-2.02 1.17a.08.08 0 0 1-.07 0L4.09 14A4.5 4.5 0 0 1 2.34 7.87zm16.6 3.85L13.1 8.36 15.12 7.2a.08.08 0 0 1 .07 0l4.83 2.79a4.49 4.49 0 0 1-.68 8.1v-5.67a.79.79 0 0 0-.4-.67zm2.01-3.02l-.14-.09-4.77-2.78a.78.78 0 0 0-.79 0L9.41 9.23V6.9a.07.07 0 0 1 .03-.06l4.83-2.79a4.5 4.5 0 0 1 6.68 4.66zM8.31 12.86l-2.02-1.16a.08.08 0 0 1-.04-.06V6.07a4.5 4.5 0 0 1 7.38-3.45l-.14.08-4.79 2.76a.79.79 0 0 0-.39.68v6.72zm1.1-2.36l2.6-1.5 2.6 1.5v3l-2.6 1.5-2.6-1.5z" fill="#10A37F"/></svg>
+          </span>
+          <span>OpenAI</span>
+        </div>
+
+        <!-- Claude AI -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z" fill="#D97706"/></svg>
+          </span>
+          <span>Claude AI</span>
+        </div>
+
+        <!-- WordPress -->
+        <div class="tool-chip">
+          <span class="tool-icon-pill">
+            <img src="assets/tools/wordpress.png" alt="WordPress" width="34" height="34" style="border-radius: 50%;" loading="lazy" decoding="async">
+          </span>
+          <span>WordPress</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ==========================================================================
+       FEATURED PROJECTS SECTION — EDITORIAL SHOWCASE
+       ========================================================================== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="services-header-row">
+        <div>
+          <div class="section-label">
+            <span>SELECTED ARCHIVE</span>
+          </div>
+          <h2 class="services-title">FEATURED WORK</h2>
+        </div>
+        <p style="max-width: 420px; color: var(--text-muted); font-size: 1.05rem;">
+          Creative visuals that turn ideas into impact.
+        </p>
+      </div>
+
+      <!-- Masterpiece Graphic Design Disperse Showcase (Interactive Scroll Fan) -->
+      <div class="masterpiece-disperse-wrap" id="disperseSection">
+        <!-- 3D Disperse Deck Stage -->
+        <div class="disperse-stage-container" id="disperseStage">
+          <!-- Card 1 (Stack Top & Leftmost fan) -->
+          <div 
+            class="disperse-card" 
+            data-index="0"
+            data-title="NIGHT KISS WEBSERIES"
+            data-cat-label="Publicity Design & Key Art"
+            data-year="2025"
+            data-desc="Official cinematic key art poster design for the series 'Night Kiss' by Madhu Baganagari, featuring atmospheric night city lighting, typography hierarchy, and evocative character portraits."
+            data-img="assets/featured_night_kiss.jpg"
+          >
+            <span class="disperse-card-tag" style="background-color: #FFFFFF; color: #080808;">FEATURED // SERIES</span>
+            <img src="assets/featured_night_kiss.jpg" alt="Night Kiss Webseries Poster" loading="lazy" decoding="async">
+            <div class="disperse-card-info">
+              <h4>Night Kiss</h4>
+              <span>Publicity Design</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div 
+            class="disperse-card" 
+            data-index="1"
+            data-title="LIVE IN GREEN KITCHEN"
+            data-cat-label="Brand Campaign & Mascot Art"
+            data-year="2025"
+            data-desc="Creative launch poster and dynamic social mascot illustrations for culinary show 'Live in Green Kitchen', introducing Cooking Master Sirisha Penumudi across Facebook, Instagram and YouTube."
+            data-img="assets/featured_green_kitchen.jpg"
+          >
+            <span class="disperse-card-tag">CAMPAIGN // MASCOTS</span>
+            <img src="assets/featured_green_kitchen.jpg" alt="Live in Green Kitchen Poster" loading="lazy" decoding="async">
+            <div class="disperse-card-info">
+              <h4>Green Kitchen</h4>
+              <span>Campaign Visuals</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div 
+            class="disperse-card" 
+            data-index="2"
+            data-title="DOT DESIGNS MONOGRAM IDENTITY"
+            data-cat-label="Brand Identity & Logo Design"
+            data-year="2025"
+            data-desc="Modern geometric monogram identity, custom typography system, and CMYK color hierarchy crafted for Dot Designs creative studio."
+            data-img="assets/featured_dot_designs.jpg"
+          >
+            <span class="disperse-card-tag">IDENTITY // LOGO</span>
+            <img src="assets/featured_dot_designs.jpg" alt="Dot Designs Logo Monogram" loading="lazy" decoding="async">
+            <div class="disperse-card-info">
+              <h4>Dot Designs</h4>
+              <span>Brand Monogram</span>
+            </div>
+          </div>
+
+          <!-- Card 4 (Center) -->
+          <div 
+            class="disperse-card" 
+            data-index="3"
+            data-title="MINDQUEST SHOOT WRAP"
+            data-cat-label="Entertainment Promo & Key Art"
+            data-year="2025"
+            data-desc="Official shoot wrap celebration poster and promotional typography artwork for MindQuest Entertainments' upcoming webseries production."
+            data-img="assets/featured_mindquest_wrap.jpg"
+          >
+            <span class="disperse-card-tag">ENTERTAINMENT</span>
+            <img src="assets/featured_mindquest_wrap.jpg" alt="MindQuest Shoot Wrap Poster" loading="lazy" decoding="async">
+            <div class="disperse-card-info">
+              <h4>MindQuest Promo</h4>
+              <span>Shoot Wrap Key Art</span>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div 
+            class="disperse-card" 
+            data-index="4"
+            data-title="NIGHT KISS CINEMATIC ART"
+            data-cat-label="Film Direction & Key Art"
+            data-year="2025"
+            data-desc="Visual storytelling, atmospheric color palette, and digital marketing poster art for cinematic streaming series."
+            data-img="assets/featured_night_kiss.jpg"
+          >
+            <span class="disperse-card-tag">SERIES POSTER</span>
+            <img src="assets/featured_night_kiss.jpg" alt="Night Kiss Key Art" loading="lazy" decoding="async">
+            <div class="disperse-card-info">
+              <h4>Night Kiss Art</h4>
+              <span>Poster Series</span>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div 
+            class="disperse-card" 
+            data-index="5"
+            data-title="CULINARY SOCIAL MASCOTS"
+            data-cat-label="Character Art & Digital Campaign"
+            data-year="2025"
+            data-desc="Illustrated social media mascots and festival promotional graphics connecting traditional culinary heritage with pop modern cartoon art."
+            data-img="assets/featured_green_kitchen.jpg"
+          >
+            <span class="disperse-card-tag">SOCIAL MEDIA</span>
+            <img src="assets/featured_green_kitchen.jpg" alt="Culinary Social Mascots" loading="lazy" decoding="async">
+            <div class="disperse-card-info">
+              <h4>Culinary Mascots</h4>
+              <span>Mascot Art</span>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div 
+            class="disperse-card" 
+            data-index="6"
+            data-title="DOT DESIGNS VECTOR SUITE"
+            data-cat-label="Corporate Identity & Typography"
+            data-year="2025"
+            data-desc="Minimalist corporate branding guidelines, geometric logo lockups, and digital vector assets for commercial rollout."
+            data-img="assets/featured_dot_designs.jpg"
+          >
+            <span class="disperse-card-tag">MINIMAL LOGO</span>
+            <img src="assets/featured_dot_designs.jpg" alt="Dot Designs Identity Suite" loading="lazy" decoding="async">
+            <div class="disperse-card-info">
+              <h4>Dot Identity</h4>
+              <span>Corporate Logo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Web & Mobile Applications Showcase (Direct Flow) -->
+      <div class="websites-showcase-wrap" id="websitesSection">
+        
+        <!-- Web Applications Section Header -->
+        <div class="services-header-row" style="margin-top: 2rem; margin-bottom: 1.5rem;">
+          <div>
+            <div class="section-label">
+              <span>INTERACTIVE EXPERIENCE</span>
+            </div>
+            <h2 class="services-title">WEB APPLICATIONS</h2>
+          </div>
+          <p style="max-width: 420px; color: var(--text-muted); font-size: 1.05rem;">
+            Websites that combine creativity, technology, and seamless user experiences.
+          </p>
+        </div>
+
+        <!-- 1. Direct Live Embedded Web Application: FURNIO -->
+        <div class="furnio-direct-app-wrapper" id="furnioDirectAppSection">
+
+          <!-- Browser Window Frame Container -->
+          <div class="furnio-browser-frame">
+            
+            <!-- Browser Header -->
+            <div class="browser-window-header">
+              <div class="browser-dots">
+                <span class="b-dot b-red"></span>
+                <span class="b-dot b-yellow"></span>
+                <span class="b-dot b-green"></span>
+              </div>
+              <div class="browser-url-bar">
+                <span class="url-lock">🔒</span>
+                <span class="url-text">https://app.furnio.design/explore</span>
+              </div>
+              <div class="browser-actions">
+                <span class="browser-reload-icon">⟳</span>
+              </div>
+            </div>
+
+            <!-- Direct Live Interactive FURNIO Application -->
+            <div class="furnio-app-window inline-app" id="furnioAppDirectWindow">
+              
+              <!-- Top Navigation Bar -->
+              <header class="furnio-app-header">
+                <div class="furnio-brand-col">
+                  <div class="furnio-logo">FURNIO</div>
+                  <span class="furnio-tagline">RENTAL PLATFORM</span>
+                </div>
+
+                <nav class="furnio-center-nav">
+                  <button class="furnio-nav-link active" data-tab="explore">Explore</button>
+                  <button class="furnio-nav-link" data-tab="collections">Collections</button>
+                  <button class="furnio-nav-link" data-tab="bookings">
+                    My Bookings 
+                    <span class="furnio-count-pill" id="furnioBookingsBadge">2</span>
+                  </button>
+                </nav>
+
+                <div class="furnio-right-actions">
+                  <div class="furnio-search-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                    <input type="text" id="furnioSearchInput" placeholder="Search furniture, styles..." />
+                  </div>
+
+                  <button class="furnio-icon-btn" title="Notifications">
+                    🔔<span class="furnio-notif-dot"></span>
+                  </button>
+
+                  <div class="furnio-user-chip">
+                    <span class="furnio-user-avatar">JD</span>
+                    <span class="furnio-user-name">John D.</span>
+                  </div>
+
+                  <button class="furnio-cart-btn" id="furnioCartTrigger" title="Open Booking Cart" onclick="window.openCartDrawer()">
+                    <span>🛒</span>
+                    <span class="furnio-cart-label">Cart</span>
+                    <span class="furnio-cart-pill" id="furnioCartCountBadge">0</span>
+                  </button>
+                </div>
+              </header>
+
+              <!-- Main Application Body Area -->
+              <main class="furnio-app-body">
+
+                <!-- ================= PAGE 1: EXPLORE / DISCOVERY ================= -->
+                <section class="furnio-page-view" id="furnioExploreView">
+                  
+                  <!-- Editorial Hero Section -->
+                  <div class="furnio-hero-banner">
+                    <div class="furnio-hero-text">
+                      <span class="furnio-hero-kicker">CURATED INTERIOR LIVING</span>
+                      <h1 class="furnio-hero-title">FURNITURE THAT<br>FITS YOUR SPACE.</h1>
+                      <p class="furnio-hero-sub">
+                        Discover, book and manage premium furniture for your home, workspace or next project.
+                      </p>
+                    </div>
+                    
+                    <div class="furnio-hero-perks">
+                      <div class="f-perk-item">
+                        <span class="f-perk-num">1,400+</span>
+                        <span class="f-perk-lbl">Designer Pieces</span>
+                      </div>
+                      <div class="f-perk-item">
+                        <span class="f-perk-num">₹0</span>
+                        <span class="f-perk-lbl">Zero Security Deposit</span>
+                      </div>
+                      <div class="f-perk-item">
+                        <span class="f-perk-num">24h</span>
+                        <span class="f-perk-lbl">Delivery & Assembly</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Category Filter Bar & Sorting Row -->
+                  <div class="furnio-controls-bar">
+                    
+                    <!-- Category Tabs -->
+                    <div class="furnio-category-pills" id="furnioCategoryPills">
+                      <button class="f-cat-pill active" data-cat="all">All</button>
+                      <button class="f-cat-pill" data-cat="Sofas">Sofas</button>
+                      <button class="f-cat-pill" data-cat="Chairs">Chairs</button>
+                      <button class="f-cat-pill" data-cat="Tables">Tables</button>
+                      <button class="f-cat-pill" data-cat="Beds">Beds</button>
+                      <button class="f-cat-pill" data-cat="Storage">Storage</button>
+                      <button class="f-cat-pill" data-cat="Office">Office</button>
+                      <button class="f-cat-pill" data-cat="Lighting">Lighting</button>
+                      <button class="f-cat-pill" data-cat="Decor">Decor</button>
+                    </div>
+
+                    <!-- Sorting & Filters Dropdown -->
+                    <div class="furnio-filter-actions">
+                      <div class="furnio-custom-sort" id="furnioCustomSort">
+                        <button class="furnio-sort-btn" id="furnioSortBtn" type="button">
+                          <span id="furnioSortLabel">Sort: Most Popular</span>
+                          <span class="f-sort-arrow">▾</span>
+                        </button>
+                        <div class="furnio-sort-dropdown" id="furnioSortDropdown">
+                          <div class="f-sort-opt active" data-val="popular">Sort: Most Popular</div>
+                          <div class="f-sort-opt" data-val="newest">Sort: Newest First</div>
+                          <div class="f-sort-opt" data-val="price-asc">Price: Low to High</div>
+                          <div class="f-sort-opt" data-val="price-desc">Price: High to Low</div>
+                          <div class="f-sort-opt" data-val="rating">Top Rated</div>
+                        </div>
+                        <input type="hidden" id="furnioSortSelect" value="popular" />
+                      </div>
+
+                      <label class="furnio-avail-toggle">
+                        <input type="checkbox" id="furnioAvailOnlyCheck" />
+                        <span>Available Only</span>
+                      </label>
+                    </div>
+
+                  </div>
+
+                  <!-- Furniture Cards Grid (12 Items Database) -->
+                  <div class="furnio-furniture-grid" id="furnioFurnitureGrid">
+
+                    <div class="furnio-card" data-id="FURN-01">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=800&auto=format&fit=crop" alt="Luna Lounge Chair" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag available">
+                          Available
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-01">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Chairs • Modern</span>
+                          <span class="f-card-rating">★ 4.8</span>
+                        </div>
+                        <h3 class="f-card-title">Luna Lounge Chair</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹1,200</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-01">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-02">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1530018607912-eff2daa1bac4?q=80&w=800&auto=format&fit=crop" alt="Nordic Oak Dining Table" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag available">
+                          Available
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-02">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Tables • Scandinavian</span>
+                          <span class="f-card-rating">★ 4.9</span>
+                        </div>
+                        <h3 class="f-card-title">Nordic Oak Dining Table</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹2,000</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-02">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-03">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?q=80&w=800&auto=format&fit=crop" alt="Velvet Cloud Modular Sofa" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag low-stock">
+                          Only 2 left
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-03">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Sofas • Luxury</span>
+                          <span class="f-card-rating">★ 4.95</span>
+                        </div>
+                        <h3 class="f-card-title">Velvet Cloud Modular Sofa</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹3,500</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-03">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-04">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop" alt="Kobe Minimalist Platform Bed" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag available">
+                          Available
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-04">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Beds • Japandi</span>
+                          <span class="f-card-rating">★ 4.85</span>
+                        </div>
+                        <h3 class="f-card-title">Kobe Minimalist Platform Bed</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹2,800</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-04">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-05">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop" alt="ErgoPro Executive Desk & Chair" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag available">
+                          Available
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-05">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Office • Ergonomic</span>
+                          <span class="f-card-rating">★ 4.75</span>
+                        </div>
+                        <h3 class="f-card-title">ErgoPro Executive Desk & Chair</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹1,800</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-05">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-06">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Brutalist Concrete Coffee Table" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag available">
+                          Available
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-06">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Tables • Industrial</span>
+                          <span class="f-card-rating">★ 4.7</span>
+                        </div>
+                        <h3 class="f-card-title">Brutalist Concrete Coffee Table</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹950</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-06">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-07">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=800&auto=format&fit=crop" alt="Flos Arc Brass Floor Lamp" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag available">
+                          Available
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-07">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Lighting • Mid-Century</span>
+                          <span class="f-card-rating">★ 4.9</span>
+                        </div>
+                        <h3 class="f-card-title">Flos Arc Brass Floor Lamp</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹650</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-07">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-08">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1595428774223-ef52624120d2?q=80&w=800&auto=format&fit=crop" alt="Scandi Teak Credenza Storage" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag low-stock">
+                          Only 3 left
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-08">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Storage • Mid-Century</span>
+                          <span class="f-card-rating">★ 4.8</span>
+                        </div>
+                        <h3 class="f-card-title">Scandi Teak Credenza Storage</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹1,500</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-08">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-09">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?q=80&w=800&auto=format&fit=crop" alt="Bouclé Accent Armchair" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag available">
+                          Available
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-09">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Chairs • Contemporary</span>
+                          <span class="f-card-rating">★ 4.88</span>
+                        </div>
+                        <h3 class="f-card-title">Bouclé Accent Armchair</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹1,400</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-09">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-10">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1532372320572-cda25653a26d?q=80&w=800&auto=format&fit=crop" alt="Zenith Marble Nightstands (Set of 2)" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag available">
+                          Available
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-10">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Decor • Modern</span>
+                          <span class="f-card-rating">★ 4.65</span>
+                        </div>
+                        <h3 class="f-card-title">Zenith Marble Nightstands (Set of 2)</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹800</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-10">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-11">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?q=80&w=800&auto=format&fit=crop" alt="Aero Mesh Standing Desk" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag available">
+                          Available
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-11">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Office • Tech</span>
+                          <span class="f-card-rating">★ 4.92</span>
+                        </div>
+                        <h3 class="f-card-title">Aero Mesh Standing Desk</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹1,650</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-11">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="furnio-card" data-id="FURN-12">
+                      <div class="f-card-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=800&auto=format&fit=crop" alt="Milano Chesterfield Leather Sofa" class="f-card-img" loading="lazy" decoding="async">
+                        <span class="f-card-tag low-stock">
+                          Only 1 left
+                        </span>
+                        <div class="f-card-quick-overlay">
+                          <button class="f-quick-btn f-card-quickview-btn" data-id="FURN-12">Quick View</button>
+                        </div>
+                      </div>
+                      <div class="f-card-body">
+                        <div class="f-card-cat-row">
+                          <span class="f-card-cat">Sofas • Classic</span>
+                          <span class="f-card-rating">★ 4.98</span>
+                        </div>
+                        <h3 class="f-card-title">Milano Chesterfield Leather Sofa</h3>
+                        <div class="f-card-footer-row">
+                          <div>
+                            <span class="f-card-price">₹4,200</span>
+                            <span class="f-card-unit"> / day</span>
+                          </div>
+                          <button class="f-card-book-btn" data-id="FURN-12">Book Now</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </section>
+
+
+                <!-- ================= PAGE 2: COLLECTIONS ================= -->
+                <section class="furnio-page-view" id="furnioCollectionsView" style="display: none;">
+                  
+                  <div class="furnio-section-header">
+                    <span class="furnio-hero-kicker">CURATED ROOM SUITES</span>
+                    <h2 class="furnio-section-title">POPULAR COLLECTIONS</h2>
+                    <p class="furnio-section-sub">Complete room packages styled by interior architects for turn-key living.</p>
+                  </div>
+
+                  <div class="furnio-collections-grid" id="furnioCollectionsGrid">
+                    
+                    <!-- Collection 1 -->
+                    <div class="furnio-collection-card">
+                      <div class="f-col-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=800&auto=format&fit=crop" alt="Nordic Minimalist Living Suite" loading="lazy" decoding="async">
+                        <span class="f-col-badge">4 PIECES INCLUDED</span>
+                      </div>
+                      <div class="f-col-content">
+                        <div class="f-col-header-row">
+                          <h3>Nordic Minimalist Living</h3>
+                          <span class="f-col-price">₹5,500 / day</span>
+                        </div>
+                        <p>Includes Velvet Cloud Sofa, Oak Dining Table, Luna Lounge Chair, and Brass Floor Lamp.</p>
+                        <button class="furnio-bundle-btn" data-bundle="nordic">Book Curated Suite →</button>
+                      </div>
+                    </div>
+
+                    <!-- Collection 2 -->
+                    <div class="furnio-collection-card">
+                      <div class="f-col-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?q=80&w=800&auto=format&fit=crop" alt="Executive Workspace Suite" loading="lazy" decoding="async">
+                        <span class="f-col-badge">3 PIECES INCLUDED</span>
+                      </div>
+                      <div class="f-col-content">
+                        <div class="f-col-header-row">
+                          <h3>Executive Tech Office</h3>
+                          <span class="f-col-price">₹4,200 / day</span>
+                        </div>
+                        <p>Includes ErgoPro Standing Desk, Mesh Ergonomic Chair, and Teak Credenza Storage.</p>
+                        <button class="furnio-bundle-btn" data-bundle="office">Book Curated Suite →</button>
+                      </div>
+                    </div>
+
+                    <!-- Collection 3 -->
+                    <div class="furnio-collection-card">
+                      <div class="f-col-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=800&auto=format&fit=crop" alt="Japandi Sanctuary Bedroom" loading="lazy" decoding="async">
+                        <span class="f-col-badge">3 PIECES INCLUDED</span>
+                      </div>
+                      <div class="f-col-content">
+                        <div class="f-col-header-row">
+                          <h3>Japandi Sanctuary Bedroom</h3>
+                          <span class="f-col-price">₹4,900 / day</span>
+                        </div>
+                        <p>Includes Kobe Platform Bed, Zenith Marble Nightstands, and Flos Arc Lamp.</p>
+                        <button class="furnio-bundle-btn" data-bundle="japandi">Book Curated Suite →</button>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </section>
+
+
+                <!-- ================= PAGE 3: MY BOOKINGS ================= -->
+                <section class="furnio-page-view" id="furnioBookingsView" style="display: none;">
+                  
+                  <div class="furnio-section-header">
+                    <span class="furnio-hero-kicker">RENTAL MANAGEMENT</span>
+                    <h2 class="furnio-section-title">MY BOOKINGS</h2>
+                    <p class="furnio-section-sub">Track active furniture deliveries, view rental contracts, and extend durations.</p>
+                  </div>
+
+                  <!-- Bookings Status Filter Tabs -->
+                  <div class="furnio-booking-tabs-bar">
+                    <button class="f-b-tab active" data-status="all">All Bookings (<span id="countAllB">2</span>)</button>
+                    <button class="f-b-tab" data-status="Upcoming">Upcoming (<span id="countUpcomingB">1</span>)</button>
+                    <button class="f-b-tab" data-status="Active">Active (<span id="countActiveB">1</span>)</button>
+                    <button class="f-b-tab" data-status="Completed">Completed (<span id="countCompletedB">0</span>)</button>
+                    <button class="f-b-tab" data-status="Cancelled">Cancelled (<span id="countCancelledB">0</span>)</button>
+                  </div>
+
+                  <!-- Bookings Cards List -->
+                  <div class="furnio-bookings-list" id="furnioBookingsList">
+                    <!-- Dynamically populated by JS -->
+                  </div>
+
+                </section>
+
+              </main>
+
+              <!-- 1. Embedded Product Details Modal -->
+              <div class="furnio-product-modal-backdrop" id="furnioProductModal" onclick="if(event.target===this) window.closeProductModal()">
+                <div class="furnio-product-modal-card">
+                  <button class="furnio-modal-close" id="furnioProductClose" onclick="window.closeProductModal()" title="Close product details">✕</button>
+                  
+                  <div class="furnio-product-modal-grid">
+                    <!-- Left: Image Gallery -->
+                    <div class="furnio-gallery-col">
+                      <div class="furnio-main-img-box">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="" id="fModalMainImg" loading="lazy" decoding="async">
+                        <span class="f-modal-badge" id="fModalAvailBadge">Available</span>
+                      </div>
+                      <div class="furnio-thumbs-row" id="fModalThumbs">
+                        <!-- Dynamically generated thumbnails -->
+                      </div>
+                    </div>
+
+                    <!-- Right: Details & Sticky Booking Panel -->
+                    <div class="furnio-details-col">
+                      <div class="f-details-header">
+                        <span class="f-modal-category" id="fModalCategory">Chairs • Modern</span>
+                        <h2 class="f-modal-title" id="fModalTitle">Luna Lounge Chair</h2>
+                        <div class="f-modal-rating-row">
+                          <span class="f-stars" id="fModalRating">★ 4.8</span>
+                          <span class="f-reviews" id="fModalReviews">(142 verified bookings)</span>
+                        </div>
+                        <div class="f-modal-price-box">
+                          <span class="f-price-num" id="fModalDailyRate">₹1,200</span>
+                          <span class="f-price-unit">/ day</span>
+                        </div>
+                      </div>
+
+                      <p class="f-modal-description" id="fModalDesc">
+                        Sculptural lounge chair crafted with solid kiln-dried oak wood, high-density foam cushioning, and textured bouclé upholstery. Engineered for ergonomic lounging.
+                      </p>
+
+                      <!-- Specifications Table -->
+                      <div class="f-specs-table">
+                        <div class="f-spec-row">
+                          <span class="f-spec-key">Material</span>
+                          <span class="f-spec-val" id="fModalMaterial">Solid Oak & Bouclé Fabric</span>
+                        </div>
+                        <div class="f-spec-row">
+                          <span class="f-spec-key">Dimensions</span>
+                          <span class="f-spec-val" id="fModalDimensions">85 × 92 × 78 cm</span>
+                        </div>
+                        <div class="f-spec-row">
+                          <span class="f-spec-key">Style</span>
+                          <span class="f-spec-val" id="fModalStyle">Modern Minimalist</span>
+                        </div>
+                        <div class="f-spec-row">
+                          <span class="f-spec-key">Inventory</span>
+                          <span class="f-spec-val" id="fModalStock">12 Units Ready</span>
+                        </div>
+                      </div>
+
+                      <!-- STICKY BOOKING PANEL -->
+                      <div class="furnio-booking-panel">
+                        <h4 class="f-panel-title">CONFIGURE RENTAL PERIOD</h4>
+                        
+                        <div class="f-panel-date-row">
+                          <div class="f-date-input-group">
+                            <label>Start Date</label>
+                            <input type="date" id="fModalStartDate" />
+                          </div>
+                          <div class="f-date-input-group">
+                            <label>End Date</label>
+                            <input type="date" id="fModalEndDate" />
+                          </div>
+                        </div>
+
+                        <div class="f-panel-qty-row">
+                          <span class="f-qty-label">Quantity:</span>
+                          <div class="f-qty-stepper">
+                            <button class="qty-btn" id="fModalQtyMinus">-</button>
+                            <span class="qty-num" id="fModalQtyVal">1</span>
+                            <button class="qty-btn" id="fModalQtyPlus">+</button>
+                          </div>
+                          <span class="f-rental-days" id="fModalDaysCount">4 Days Rental</span>
+                        </div>
+
+                        <div class="f-pricing-calc-box">
+                          <div class="f-calc-row">
+                            <span>Daily Calculation</span>
+                            <span id="fModalCalcFormula">1 Unit × ₹1,200/day</span>
+                          </div>
+                          <div class="f-calc-row">
+                            <span>Rental Subtotal (4 Days)</span>
+                            <span id="fModalCalcSubtotal">₹4,800</span>
+                          </div>
+                          <div class="f-calc-row">
+                            <span>Security Deposit</span>
+                            <span style="color:#22C55E; font-weight:800;">₹0 (WAIVED)</span>
+                          </div>
+                          <div class="f-calc-total-row">
+                            <span>ESTIMATED TOTAL</span>
+                            <span class="f-calc-total-num" id="fModalCalcTotal">₹4,800</span>
+                          </div>
+                        </div>
+
+                        <button class="furnio-add-cart-btn" id="fModalAddToCartBtn">
+                          <span>ADD TO BOOKING CART</span>
+                          <span>→</span>
+                        </button>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- 2. Embedded Booking Cart Slide-out Drawer -->
+              <div class="furnio-cart-drawer-backdrop" id="furnioCartDrawer" onclick="if(event.target===this) window.closeCartDrawer()">
+                <div class="furnio-cart-drawer-panel">
+                  
+                  <div class="f-cart-header">
+                    <div class="f-cart-title-row">
+                      <h3>BOOKING CART</h3>
+                      <span class="f-cart-badge" id="fCartDrawerCount">0 ITEMS</span>
+                    </div>
+                    <button class="f-cart-close-btn" id="fCartCloseBtn" onclick="window.closeCartDrawer()" title="Close cart">✕</button>
+                  </div>
+
+                  <!-- Itemized Cart List -->
+                  <div class="f-cart-items-list" id="fCartItemsList">
+                    <!-- Dynamically rendered cart items -->
+                  </div>
+
+                  <!-- Cart Pricing Summary Footer -->
+                  <div class="f-cart-footer">
+                    <div class="f-cart-calc-line">
+                      <span>Subtotal</span>
+                      <span id="fCartSubtotal">₹0</span>
+                    </div>
+                    <div class="f-cart-calc-line">
+                      <span>GST (18%)</span>
+                      <span id="fCartTaxes">₹0</span>
+                    </div>
+                    <div class="f-cart-calc-line">
+                      <span>Security Deposit</span>
+                      <span style="color:#22C55E; font-weight:800;">₹0 (WAIVED)</span>
+                    </div>
+                    <div class="f-cart-total-line">
+                      <span>TOTAL AMOUNT</span>
+                      <span class="f-cart-final-total" id="fCartTotal">₹0</span>
+                    </div>
+
+                    <button class="furnio-checkout-trigger-btn" id="fCartProceedBtn">
+                      <span>PROCEED TO BOOKING</span>
+                      <span>→</span>
+                    </button>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- 3. Embedded Multi-Step Booking Checkout Modal -->
+              <div class="furnio-checkout-modal-backdrop" id="furnioCheckoutModal" onclick="if(event.target===this) window.closeCheckoutModal()">
+                <div class="furnio-checkout-card">
+                  <button class="furnio-modal-close" id="furnioCheckoutClose" onclick="window.closeCheckoutModal()" title="Close checkout">✕</button>
+
+                  <!-- 4-Step Progress Bar -->
+                  <div class="f-checkout-steps-bar">
+                    <div class="f-step active" id="fStepIndicator1"><span>01</span> Details</div>
+                    <div class="f-step-line"></div>
+                    <div class="f-step" id="fStepIndicator2"><span>02</span> Review</div>
+                    <div class="f-step-line"></div>
+                    <div class="f-step" id="fStepIndicator3"><span>03</span> Payment</div>
+                    <div class="f-step-line"></div>
+                    <div class="f-step" id="fStepIndicator4"><span>04</span> Confirmed</div>
+                  </div>
+
+                  <div class="f-checkout-body">
+                    
+                    <!-- STEP 1: BOOKING DETAILS -->
+                    <div class="f-checkout-step-pane active" id="fStepPane1">
+                      <h3 class="f-step-heading">DELIVERY & CONTACT INFORMATION</h3>
+                      <p class="f-step-sub">Provide delivery location and contact details for furniture dispatch and assembly.</p>
+
+                      <form id="fCheckoutForm1" onsubmit="event.preventDefault();">
+                        <div class="f-form-grid">
+                          <div class="f-field">
+                            <label>Full Name</label>
+                            <input type="text" id="fCustName" value="John Doe" required />
+                          </div>
+                          <div class="f-field">
+                            <label>Phone Number</label>
+                            <input type="tel" id="fCustPhone" value="+91 98765 43210" required />
+                          </div>
+                          <div class="f-field full-width">
+                            <label>Email Address</label>
+                            <input type="email" id="fCustEmail" value="john.doe@furnio.design" required />
+                          </div>
+                          <div class="f-field full-width">
+                            <label>Delivery Street Address & Apt / Floor</label>
+                            <input type="text" id="fCustAddress" value="704 Horizon Tower, Indiranagar" required />
+                          </div>
+                          <div class="f-field">
+                            <label>City</label>
+                            <input type="text" id="fCustCity" value="Bengaluru" required />
+                          </div>
+                          <div class="f-field">
+                            <label>PIN Code</label>
+                            <input type="text" id="fCustPin" value="560038" required />
+                          </div>
+                        </div>
+
+                        <div class="f-step-actions">
+                          <button class="furnio-secondary-btn" id="fStep1Back">Back to Cart</button>
+                          <button class="furnio-primary-btn" id="fStep1Next">
+                            <span>Continue to Review</span>
+                            <span>→</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+
+                    <!-- STEP 2: REVIEW BOOKING -->
+                    <div class="f-checkout-step-pane" id="fStepPane2" style="display: none;">
+                      <h3 class="f-step-heading">REVIEW BOOKING & RENTAL SCHEDULE</h3>
+                      <p class="f-step-sub">Confirm furniture pieces, duration and dispatch schedule before payment.</p>
+
+                      <div class="f-review-summary-card">
+                        <div class="f-review-items-box" id="fReviewItemsBox">
+                          <!-- Dynamically populated -->
+                        </div>
+                        
+                        <div class="f-review-meta-box">
+                          <div class="f-meta-group">
+                            <span class="meta-label">DELIVERY DESTINATION</span>
+                            <span class="meta-val" id="fReviewAddress">704 Horizon Tower, Indiranagar, Bengaluru - 560038</span>
+                          </div>
+                          <div class="f-meta-group">
+                            <span class="meta-label">CONTACT DISPATCH</span>
+                            <span class="meta-val" id="fReviewContact">John Doe • +91 98765 43210</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="f-step-actions">
+                        <button class="furnio-secondary-btn" id="fStep2Back">Edit Details</button>
+                        <button class="furnio-primary-btn" id="fStep2Next">
+                          <span>Proceed to Payment</span>
+                          <span>→</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- STEP 3: PAYMENT -->
+                    <div class="f-checkout-step-pane" id="fStepPane3" style="display: none;">
+                      <h3 class="f-step-heading">SELECT PAYMENT METHOD</h3>
+                      <p class="f-step-sub">Safe & encrypted checkout. Security deposit is completely zero.</p>
+
+                      <!-- Payment Tabs -->
+                      <div class="f-payment-tabs">
+                        <button class="f-pay-tab active" data-method="card">💳 Card</button>
+                        <button class="f-pay-tab" data-method="upi">⚡ UPI / QR</button>
+                        <button class="f-pay-tab" data-method="netbank">🏛️ Net Banking</button>
+                      </div>
+
+                      <!-- Card Form -->
+                      <div class="f-pay-method-pane" id="fPayPaneCard">
+                        <div class="f-form-grid">
+                          <div class="f-field full-width">
+                            <label>Card Number</label>
+                            <input type="text" placeholder="4532 •••• •••• 8820" value="4532 8920 4092 8820" />
+                          </div>
+                          <div class="f-field">
+                            <label>Expiry Date</label>
+                            <input type="text" placeholder="MM/YY" value="08/28" />
+                          </div>
+                          <div class="f-field">
+                            <label>CVV</label>
+                            <input type="password" placeholder="•••" value="842" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- UPI Form -->
+                      <div class="f-pay-method-pane" id="fPayPaneUpi" style="display: none;">
+                        <div class="f-field full-width">
+                          <label>UPI ID (Google Pay / PhonePe / Paytm)</label>
+                          <input type="text" placeholder="username@okhdfcbank" value="johndoe@upi" />
+                        </div>
+                      </div>
+
+                      <!-- Net Banking Form -->
+                      <div class="f-pay-method-pane" id="fPayPaneNetbank" style="display: none;">
+                        <div class="f-field full-width">
+                          <label>Select Bank</label>
+                          <select class="furnio-sort-select" style="width: 100%;">
+                            <option>HDFC Bank</option>
+                            <option>ICICI Bank</option>
+                            <option>State Bank of India</option>
+                            <option>Axis Bank</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="f-step-actions">
+                        <button class="furnio-secondary-btn" id="fStep3Back">Back</button>
+                        <button class="furnio-primary-btn pay-now-btn" id="fStep3Pay">
+                          <span id="fPayBtnSpinner" class="btn-spinner" style="display: none;"></span>
+                          <span id="fPayBtnText">AUTHORIZE & PAY ₹0</span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- STEP 4: BOOKING CONFIRMED -->
+                    <div class="f-checkout-step-pane" id="fStepPane4" style="display: none;">
+                      <div class="f-confirmed-card">
+                        <div class="f-confirm-icon-badge">✓</div>
+                        <h2 class="f-confirm-title">YOUR FURNITURE IS BOOKED.</h2>
+                        <p class="f-confirm-desc">
+                          Your rental reservation has been recorded in the FURNIO dispatch pipeline.
+                        </p>
+
+                        <div class="f-confirm-ticket">
+                          <div class="f-ticket-row">
+                            <span class="t-lbl">BOOKING ID</span>
+                            <span class="t-val highlight" id="fConfirmBookingId">#FRN-2025-1048</span>
+                          </div>
+                          <div class="f-ticket-row">
+                            <span class="t-lbl">ESTIMATED DISPATCH</span>
+                            <span class="t-val" id="fConfirmDeliveryDate">Tomorrow • 10:00 AM - 2:00 PM</span>
+                          </div>
+                          <div class="f-ticket-row">
+                            <span class="t-lbl">PAID AMOUNT</span>
+                            <span class="t-val" id="fConfirmPaidAmount">₹15,576.00</span>
+                          </div>
+                        </div>
+
+                        <div class="f-confirm-actions">
+                          <button class="furnio-primary-btn" id="fGoToMyBookings">
+                            <span>VIEW IN MY BOOKINGS</span>
+                            <span>→</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              </main>
+
+              <!-- Web Application Automatic Interactive Cursor Layer (Contained Strictly Inside the Browser Window) -->
+              <div class="auto-interactive-cursor-layer" id="autoCursorLayer">
+                <div class="auto-cursor-pointer" id="autoCursorPointer">
+                  <svg class="auto-cursor-svg" width="28" height="28" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 3L11 21L14.5 13.5L22 10L4 3Z" fill="#111116" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
+                    <circle cx="5" cy="4" r="2.5" fill="var(--accent)" />
+                  </svg>
+                  <div class="auto-cursor-ripple" id="autoCursorRipple"></div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Mobile Applications 4-Screen Row -->
+        <div class="mobile-apps-section-block">
+          <div class="services-header-row" style="margin-top: 2.5rem; margin-bottom: 1.25rem;">
+            <div>
+              <div class="section-label">
+                <span>MOBILE EXPERIENCE</span>
+              </div>
+              <h2 class="services-title">MOBILE APPLICATIONS</h2>
+            </div>
+            <p style="max-width: 420px; color: var(--text-muted); font-size: 1.05rem;">
+              Mobile experiences built to move with your users.
+            </p>
+          </div>
+
+          <!-- Master Card Frame Exclusively Covering Mobile Screens -->
+          <div class="mobile-phones-frame">
+            <div class="mobile-phones-grid">
+            
+            <!-- Screen 1: Spatial Booking System (Multi-Listing 3D Spatial Stays) -->
+            <div 
+              class="mobile-phone-card" 
+              id="appCard1"
+              data-title="SPATIAL STAYS — MULTI-LISTING ARCHITECTURE"
+              data-cat-label="Spatial AR & Multi-Property Reservation"
+              data-year="2025"
+              data-desc="Real-time multi-listing 3D spatial stay reservation system with horizontal property swipe, dark-mode map overlay with live price pins, and biometric Apple Pay FaceID checkout."
+              data-img="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=800&auto=format&fit=crop"
+            >
+              <div class="phone-device-frame">
+                <div class="phone-dynamic-island"></div>
+                <div class="phone-status-bar">
+                  <span>9:41</span>
+                  <div class="phone-status-icons">
+                    <span>5G</span>
+                    <span style="font-size: 0.65rem;">100%</span>
+                  </div>
+                </div>
+                
+                <div class="phone-screen-content app-screen-1" id="s1ScreenContent">
+                  
+                  <!-- Screen 1 Interactive Demo Cursor -->
+                  <div class="phone-neon-cursor cursor-clean" id="s1NeonCursor">
+                    <svg class="neon-cursor-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M4 3L11 21L14.5 13.5L22 10L4 3Z" fill="#111116" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="neon-cursor-pulse"></div>
+                  </div>
+
+                  <!-- Top Bar: Location & iOS Date Picker Pill -->
+                  <div class="app-top-nav" id="s1TopNav">
+                    <div class="app-loc-box date-picker-btn" id="s1DateTrigger" title="Tap to pick dates & calculate total">
+                      <span class="app-loc-pin">📍</span>
+                      <div>
+                        <div class="app-loc-city" id="s1StayLocCity">Aman Kyoto, Japan</div>
+                        <div class="app-loc-dates" id="s1DateDisplay"><span id="s1DatesLabel">Oct 12 - 16</span> • <span id="s1NightsLabel">4 Nights</span> ▾</div>
+                      </div>
+                    </div>
+                    
+                    <button class="app-icon-btn" id="s1FilterBtn" aria-label="Filter" title="Toggle Price Filter">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+                    </button>
+                  </div>
+
+                  <!-- Mode Toggle Switch: [ 🏢 3D Stays | 🗺️ Map ] -->
+                  <div class="s1-view-toggle-bar">
+                    <button class="s1-toggle-pill active" id="s1Toggle3D" data-mode="3d">🏢 3D Stays</button>
+                    <button class="s1-toggle-pill" id="s1ToggleMap" data-mode="map">🗺️ Map View</button>
+                  </div>
+
+                  <!-- Interactive Price Filter Slider (Shown when clicking filter) -->
+                  <div class="app-price-filter-slider" id="s1PriceSliderBar" style="display: none;">
+                    <div class="slider-label-row">
+                      <span>MAX RATE FILTER</span>
+                      <span id="s1SliderVal">₹7,000 / night</span>
+                    </div>
+                    <input type="range" min="3500" max="9500" value="7000" class="app-range-input" id="s1PriceRange" />
+                    <div class="slider-count-badge" id="s1FilterCountBadge">3 Stays Available Under ₹7,000</div>
+                  </div>
+
+                  <!-- iOS-Style Calendar Pricing Engine Sheet (Slides down on date click) -->
+                  <div class="app-calendar-wheel" id="s1CalendarWheel">
+                    <div class="cal-wheel-header">
+                      <span>SELECT CHECK-IN & CHECK-OUT</span>
+                      <button class="cal-close-btn" id="s1CalClose">✕</button>
+                    </div>
+                    <div class="cal-wheel-days">
+                      <span class="cal-day" data-nights="2" data-range="Oct 10 - 12">Oct 10</span>
+                      <span class="cal-day" data-nights="3" data-range="Oct 11 - 14">Oct 11</span>
+                      <span class="cal-day active date-oct-12-16" data-nights="4" data-range="Oct 12 - 16">Oct 12</span>
+                      <span class="cal-day in-range" data-nights="4" data-range="Oct 12 - 16">Oct 13</span>
+                      <span class="cal-day in-range" data-nights="4" data-range="Oct 12 - 16">Oct 14</span>
+                      <span class="cal-day in-range" data-nights="4" data-range="Oct 12 - 16">Oct 15</span>
+                      <span class="cal-day active" data-nights="4" data-range="Oct 12 - 16">Oct 16</span>
+                      <span class="cal-day" data-nights="5" data-range="Oct 17 - 22">Oct 17</span>
+                    </div>
+                    <div class="cal-pricing-summary">
+                      <span id="s1CalcFormula">4 Nights × ₹4,200/night</span>
+                      <span class="calc-total-pill" id="s1CalcTotal">₹16,800 Total</span>
+                    </div>
+                  </div>
+
+                  <!-- 1. Main 3D Spatial Viewport with Horizontal Listing Swipe -->
+                  <div class="app-main-visual" id="s1MainVisual">
+                    
+                    <div class="spatial-viewport-wrap" id="s1SpatialWrap">
+                      <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?q=80&w=800&auto=format&fit=crop" 
+                        alt="Luxury Spatial Stay Villa" 
+                        class="phone-app-img" 
+                        id="s1VillaImg" 
+                      loading="lazy" decoding="async">
+                      <!-- Responsive Dynamic Lighting Overlay -->
+                      <div class="spatial-light-reflection" id="s1LightReflection"></div>
+                    </div>
+                    
+                    <!-- Horizontal Property Swipe Navigation Controls -->
+                    <button class="s1-swipe-arrow prev-arrow" id="s1PrevStay" title="Previous Stay">‹</button>
+                    <button class="s1-swipe-arrow next-arrow" id="s1NextStay" title="Next Stay">›</button>
+
+                    <!-- Pagination Dots -->
+                    <div class="s1-pagination-dots" id="s1PaginationDots">
+                      <span class="s1-dot active" data-index="0"></span>
+                      <span class="s1-dot" data-index="1"></span>
+                      <span class="s1-dot" data-index="2"></span>
+                    </div>
+
+                    <div class="app-floating-pill rotate-pill" id="s1RotatePill" title="Drag across viewport or tap to orbit">
+                      <span class="rotate-icon">↻</span>
+                      <span id="s1RotateLabel">Swipe / Drag 360°</span>
+                    </div>
+                  </div>
+
+                  <!-- 2. Dark-Mode Architectural Map View with Live Price Pins -->
+                  <div class="s1-map-overlay" id="s1MapOverlay" style="display: none;">
+                    <div class="map-grid-bg">
+                      <div class="map-contour contour-1"></div>
+                      <div class="map-contour contour-2"></div>
+                      <div class="map-contour contour-3"></div>
+                    </div>
+
+                    <!-- Live Price Pins on Map -->
+                    <div class="map-price-pin pin-kyoto active" data-index="0" title="Aman Kyoto - ₹4,200">
+                      <span class="pin-pulse"></span>
+                      <span class="pin-price-pill">₹4,200</span>
+                      <span class="pin-label">Kyoto</span>
+                    </div>
+
+                    <div class="map-price-pin pin-zermatt" data-index="1" title="Alpine Chalet - ₹6,800">
+                      <span class="pin-pulse"></span>
+                      <span class="pin-price-pill">₹6,800</span>
+                      <span class="pin-label">Zermatt</span>
+                    </div>
+
+                    <div class="map-price-pin pin-utah" data-index="2" title="Amangiri Desert - ₹8,500">
+                      <span class="pin-pulse"></span>
+                      <span class="pin-price-pill">₹8,500</span>
+                      <span class="pin-label">Utah</span>
+                    </div>
+
+                    <div class="map-legend-pill">
+                      <span>TAP ANY PIN TO EXPAND 3D STAY</span>
+                    </div>
+                  </div>
+
+                  <!-- Bottom Sheet Card: Rate & Instant Total -->
+                  <div class="app-bottom-sheet" id="s1BottomSheet">
+                    <div class="app-sheet-handle"></div>
+                    <div class="app-sheet-row">
+                      <div>
+                        <h4 class="app-sheet-title" id="s1StayTitle">Aman Kyoto Pavilion</h4>
+                        <div class="app-rating-row">
+                          <span class="app-star" id="s1StayRating">★ 4.98</span>
+                          <span class="app-reviews" id="s1StayReviews">(214 reviews)</span>
+                        </div>
+                      </div>
+                      <div class="app-price-box">
+                        <span class="app-price-num" id="s1CardPrice">₹16,800</span>
+                        <span class="app-price-sub" id="s1NightsSub">/ 4 nights total</span>
+                      </div>
+                    </div>
+                    
+                    <button class="app-primary-btn" id="s1ReserveBtn">
+                      <span class="btn-spinner" id="s1Spinner" style="display: none;"></span>
+                      <span id="s1BtnText">RESERVE NOW</span>
+                      <span id="s1BtnArrow">→</span>
+                    </button>
+                  </div>
+
+                  <!-- Sliding Apple Pay Modal Sheet with FaceID Ring Feedback -->
+                  <div class="apple-pay-sheet" id="s1ApplePaySheet">
+                    <div class="apple-pay-handle"></div>
+                    <div class="apple-pay-header-row">
+                      <span class="apple-pay-logo">Pay</span>
+                      <button class="apple-pay-cancel" id="s1PayCancel">Cancel</button>
+                    </div>
+
+                    <div class="apple-pay-item-card">
+                      <div class="apple-card-chip-row">
+                        <span class="apple-card-brand">Apple Card</span>
+                        <span class="apple-card-num">•••• 4092</span>
+                      </div>
+                      <div class="apple-pay-details">
+                        <span class="apple-pay-stay-title">Aman Kyoto Pavilion (4 Nights)</span>
+                        <span class="apple-pay-total-amount" id="s1PayTotal">₹16,800.00</span>
+                      </div>
+                    </div>
+
+                    <!-- FaceID Biometric Scan Ring Box -->
+                    <div class="faceid-scan-container" id="s1FaceIdTrigger" title="Double click / Tap to Authenticate FaceID">
+                      <div class="faceid-bracket-frame" id="s1FaceIdFrame">
+                        <div class="faceid-smile-icon">
+                          <span>◠ ◠</span>
+                          <span class="smile-mouth">⌣</span>
+                        </div>
+                        <div class="faceid-scan-beam" id="s1FaceIdBeam"></div>
+                      </div>
+                      <div class="faceid-status-text" id="s1FaceIdStatus">
+                        <span class="faceid-main-msg">Double-Click / Tap for Face ID</span>
+                        <span class="faceid-sub-msg">Confirm ₹16,800.00 with Biometrics</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Booking Confirmed Success Overlay -->
+                  <div class="app-success-overlay" id="s1SuccessCard">
+                    <div class="success-icon-badge">✓</div>
+                    <h4>RESERVATION CONFIRMED!</h4>
+                    <p>Aman Kyoto Pavilion • Spatial Suite #402</p>
+                    <span class="success-dates" id="s1SuccessDates">Oct 12 - 16, 2025 • Paid with Pay</span>
+                    <button class="success-reset-btn" id="s1ResetBtn">Done</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 2: FlexAI (AI Fitness & Real-Time Posture Computer Vision Tracker) -->
+            <div 
+              class="mobile-phone-card" 
+              id="appCard2"
+              data-title="FLEXAI — COMPUTER VISION FITNESS"
+              data-cat-label="AI Computer Vision & Biometric Posture Tracking"
+              data-year="2025"
+              data-desc="Real-time camera joint skeleton tracking, dynamic angle fault correction, live biometric heart rate HUD, and Apple Health export."
+              data-img="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop"
+            >
+              <div class="phone-device-frame">
+                <div class="phone-dynamic-island"></div>
+                <div class="phone-status-bar">
+                  <span>9:41</span>
+                  <div class="phone-status-icons">
+                    <span>5G</span>
+                    <span style="font-size: 0.65rem;">100%</span>
+                  </div>
+                </div>
+                
+                <div class="phone-screen-content app-screen-2 flexai-screen" id="s2ScreenContent">
+                  
+                  <!-- Screen 2 Interactive Demo Cursor -->
+                  <div class="phone-neon-cursor cursor-clean" id="s2NeonCursor">
+                    <svg class="neon-cursor-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M4 3L11 21L14.5 13.5L22 10L4 3Z" fill="#111116" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="neon-cursor-pulse"></div>
+                  </div>
+
+                  <!-- Top Dropdown Posture Warning Banner (Slides down when fault detected) -->
+                  <div class="flexai-warning-banner" id="s2PostureWarning">
+                    <span class="warning-icon-badge">⚠️</span>
+                    <div class="warning-text-col">
+                      <span class="warning-title">POSTURE FAULT DETECTED</span>
+                      <span class="warning-desc" id="s2WarningMsg">Keep front heel grounded • Align knee angle</span>
+                    </div>
+                    <button class="warning-fix-btn" id="s2AutoFixBtn">Auto-Correct</button>
+                  </div>
+
+                  <!-- Top Bar: Exercise HUD, Active Timer & Heart Rate Monitor -->
+                  <div class="app-top-nav flexai-top-nav">
+                    <div class="flexai-exercise-box">
+                      <div class="flexai-pill-live">
+                        <span class="live-rec-dot"></span>
+                        <span>CV TRACKING</span>
+                      </div>
+                      <h4 class="flexai-exercise-name">Bulgarian Split Squat</h4>
+                    </div>
+
+                    <div class="flexai-metrics-row">
+                      <button class="muscle-quads-btn" id="s2QuadsBtn" title="3D Heatmap Quads Target">
+                        <span>🔥 Quads (96%)</span>
+                      </button>
+                      <div class="metric-hud-box">
+                        <span class="hud-label">TIMER</span>
+                        <span class="hud-value" id="s2TimerVal">00:45</span>
+                      </div>
+                      <div class="metric-hud-box heart-box">
+                        <span class="heart-pulse-icon">❤️</span>
+                        <span class="hud-value" id="s2HeartBpm">142</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Main Camera Tracking Viewport with SVG Digital Skeleton Overlay -->
+                  <div class="app-main-visual flexai-viewport" id="s2MainVisual">
+                    <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=800&auto=format&fit=crop" 
+                      alt="FlexAI Real-Time Computer Vision Workout Feed" 
+                      class="phone-app-img flexai-camera-img" 
+                      id="s2FitnessImg" 
+                    loading="lazy" decoding="async">
+
+                    <!-- SVG Digital Skeleton Joint Tracking Overlay -->
+                    <svg class="flexai-skeleton-svg" viewBox="0 0 300 450" id="s2SkeletonSvg">
+                      <!-- Bones connecting joints -->
+                      <line x1="150" y1="70" x2="150" y2="105" class="bone-line" />
+                      <line x1="110" y1="115" x2="190" y2="115" class="bone-line" />
+                      <line x1="110" y1="115" x2="85" y2="175" class="bone-line" />
+                      <line x1="85" y1="175" x2="70" y2="230" class="bone-line" />
+                      <line x1="190" y1="115" x2="215" y2="175" class="bone-line" />
+                      <line x1="215" y1="175" x2="230" y2="230" class="bone-line" />
+                      
+                      <line x1="150" y1="105" x2="150" y2="215" class="bone-line spine-line" />
+                      <line x1="125" y1="215" x2="175" y2="215" class="bone-line" />
+                      
+                      <!-- Left Leg (Front Squat Leg) -->
+                      <line x1="125" y1="215" x2="105" y2="305" class="bone-line leg-bone" id="s2ThighBone" />
+                      <line x1="105" y1="305" x2="110" y2="395" class="bone-line leg-bone" id="s2ShinBone" />
+                      
+                      <!-- Right Leg (Rear Stabilizing Leg) -->
+                      <line x1="175" y1="215" x2="195" y2="295" class="bone-line" />
+                      <line x1="195" y1="295" x2="225" y2="385" class="bone-line" />
+
+                      <!-- Joint Tracking Nodes -->
+                      <circle cx="150" cy="70" r="10" class="joint-node head-node" />
+                      <circle cx="110" cy="115" r="5" class="joint-node" />
+                      <circle cx="190" cy="115" r="5" class="joint-node" />
+                      <circle cx="85" cy="175" r="4.5" class="joint-node" />
+                      <circle cx="215" cy="175" r="4.5" class="joint-node" />
+                      <circle cx="125" cy="215" r="5.5" class="joint-node" />
+                      <circle cx="175" cy="215" r="5.5" class="joint-node" />
+                      
+                      <!-- Target Knee Joint Node (Interactive Fault Trigger) -->
+                      <circle cx="105" cy="305" r="8" class="joint-node knee-node" id="s2KneeJoint" />
+                      <circle cx="195" cy="295" r="5.5" class="joint-node" />
+                      <circle cx="110" cy="395" r="6" class="joint-node ankle-node" />
+                      <circle cx="225" cy="385" r="5" class="joint-node" />
+                    </svg>
+
+                    <!-- Interactive Posture Simulator Trigger Pill -->
+                    <button class="app-floating-pill flexai-fault-trigger" id="s2FaultTrigger" title="Tap to simulate posture error">
+                      <span id="s2FaultTriggerText">⚠️ Simulate Knee Fault</span>
+                    </button>
+                  </div>
+
+                  <!-- Bottom Sheet: Rep Counter, Form Accuracy & Action CTAs -->
+                  <div class="app-bottom-sheet flexai-bottom-sheet" id="s2BottomSheet">
+                    <div class="flexai-stats-row">
+                      
+                      <!-- Rep Counter Box -->
+                      <div class="flexai-rep-counter-card" id="s2AddRepBtn" title="Tap to add +1 Rep">
+                        <div class="rep-number-row">
+                          <span class="rep-current" id="s2RepCount">8</span>
+                          <span class="rep-target">/ 12</span>
+                        </div>
+                        <span class="rep-sublabel">REPS (TAP +1)</span>
+                      </div>
+
+                      <!-- Form Score Meter Gauge -->
+                      <div class="flexai-form-score-card">
+                        <div class="form-score-row">
+                          <span class="form-score-val" id="s2FormScore">94%</span>
+                          <span class="form-status-tag" id="s2FormStatusTag">OPTIMAL</span>
+                        </div>
+                        <div class="form-progress-track">
+                          <div class="form-progress-fill" id="s2FormScoreFill" style="width: 94%;"></div>
+                        </div>
+                        <span class="rep-sublabel">FORM ACCURACY</span>
+                      </div>
+
+                    </div>
+
+                    <!-- Bottom Action Controls Row -->
+                    <div class="flexai-action-btn-row">
+                      <button class="flexai-secondary-btn" id="s2PauseBtn">
+                        <span id="s2PauseText">⏸ PAUSE</span>
+                      </button>
+                      <button class="flexai-primary-btn" id="s2StartWorkoutBtn">
+                        <span>Start AI Camera Workout</span>
+                        <span>→</span>
+                      </button>
+                    </div>
+                  </div>
+
+                  <!-- State 3: Workout Summary & Performance Analytics Modal -->
+                  <div class="flexai-summary-modal" id="s2SummaryModal">
+                    <div class="summary-header">
+                      <div class="summary-badge">SET #3 COMPLETE</div>
+                      <h4>WORKOUT PERFORMANCE</h4>
+                      <p>Bulgarian Split Squat • 12 Reps Logged</p>
+                    </div>
+
+                    <div class="summary-metrics-grid">
+                      <div class="summary-card">
+                        <span class="summary-card-val">285</span>
+                        <span class="summary-card-unit">kcal</span>
+                        <span class="summary-card-label">CALORIES BURNED</span>
+                      </div>
+                      <div class="summary-card">
+                        <span class="summary-card-val" style="color: #38BDF8;">96.4%</span>
+                        <span class="summary-card-unit">score</span>
+                        <span class="summary-card-label">AVG FORM ACCURACY</span>
+                      </div>
+                    </div>
+
+                    <!-- Muscle Engagement Heatmap Breakdown -->
+                    <div class="muscle-heatmap-box">
+                      <span class="heatmap-title">TARGET MUSCLE ENGAGEMENT</span>
+                      <div class="muscle-bars">
+                        <div class="m-bar-row">
+                          <span>Quadriceps</span>
+                          <div class="m-track"><div class="m-fill" style="width: 96%; background: #EF4444;"></div></div>
+                          <span class="m-percent">96%</span>
+                        </div>
+                        <div class="m-bar-row">
+                          <span>Glutes & Hamstrings</span>
+                          <div class="m-track"><div class="m-fill" style="width: 91%; background: #F59E0B;"></div></div>
+                          <span class="m-percent">91%</span>
+                        </div>
+                        <div class="m-bar-row">
+                          <span>Core Stabilizers</span>
+                          <div class="m-track"><div class="m-fill" style="width: 84%; background: #10B981;"></div></div>
+                          <span class="m-percent">84%</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="flexai-apple-health-btn" id="s2HealthExportBtn">
+                      <span id="s2HealthBtnText">LOG TO APPLE HEALTH ( Health)</span>
+                      <span id="s2HealthBtnIcon">→</span>
+                    </button>
+
+                    <button class="summary-close-btn" id="s2SummaryClose">Back to Workout</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 3: Creative (Interactive E-Commerce Lookbook & Product Catalog) -->
+            <div 
+              class="mobile-phone-card" 
+              id="appCard3"
+              data-title="AURA APPAREL — INTERACTIVE LOOKBOOK"
+              data-cat-label="Luxury E-Commerce & Lookbook UI"
+              data-year="2025"
+              data-desc="Fluid editorial shopping experience featuring interactive anchor points pinned to apparel, seamless product catalog with category filter tabs, fly-to-cart particles, and slide-up bag drawer."
+              data-img="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop"
+            >
+              <div class="phone-device-frame">
+                <div class="phone-dynamic-island"></div>
+                <div class="phone-status-bar">
+                  <span>9:41</span>
+                  <div class="phone-status-icons">
+                    <span>5G</span>
+                    <span style="font-size: 0.65rem;">100%</span>
+                  </div>
+                </div>
+                
+                <div class="phone-screen-content app-screen-3" id="s3ScreenContent">
+                  
+                  <!-- Screen 3 Interactive Demo Cursor -->
+                  <div class="phone-neon-cursor cursor-clean" id="s3NeonCursor">
+                    <svg class="neon-cursor-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M4 3L11 21L14.5 13.5L22 10L4 3Z" fill="#111116" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="neon-cursor-pulse"></div>
+                  </div>
+
+                  <!-- Top Bar: Brand + Wishlist + Category Swipe -->
+                  <div class="app-lookbook-top">
+                    <div class="lookbook-nav-row">
+                      <span class="lookbook-logo">AURA.</span>
+                      <div class="lookbook-actions">
+                        <span class="lookbook-heart" id="s3HeartBtn">♥</span>
+                        <div class="lookbook-bag-wrap" id="s3BagTarget" title="Open Shopping Bag">
+                          <span class="lookbook-bag">👜</span>
+                          <span class="bag-counter-pill" id="s3BagCount">1</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lookbook-category-bar" id="s3CatBar">
+                      <span class="cat-pill active" data-cat="all">All</span>
+                      <span class="cat-pill" data-cat="streetwear">Streetwear</span>
+                      <span class="cat-pill tab-lookbook" data-cat="lookbook">Lookbook</span>
+                      <span class="cat-pill" data-cat="accessories">Accessories</span>
+                    </div>
+                  </div>
+
+                  <!-- 1. Lookbook Editorial View with Glowing Hot-Spots (Shown when 'Lookbook' is selected) -->
+                  <div class="app-main-visual lookbook-visual" id="s3LookbookVisual" style="display: none;">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?q=80&w=800&auto=format&fit=crop" alt="Lookbook High Fashion Model" class="phone-app-img" loading="lazy" decoding="async">
+                    
+                    <!-- Pinned Tag Point 1: Aura Oversized Top -->
+                    <div class="app-tap-point point-1" id="s3Hotspot1" title="Click to select size">
+                      <span class="tap-radar-pulse"></span>
+                      <span class="tap-dot"></span>
+                      <div class="tap-info-card">
+                        <span class="tag-title">Aura Oversized Top</span>
+                        <span class="tag-price">₹2,499</span>
+                      </div>
+                    </div>
+
+                    <!-- Pinned Tag Point 2: Modular Cargo -->
+                    <div class="app-tap-point point-2" id="s3Hotspot2" title="Click to select size">
+                      <span class="tap-radar-pulse"></span>
+                      <span class="tap-dot"></span>
+                      <div class="tap-info-card">
+                        <span class="tag-title">Modular Cargo</span>
+                        <span class="tag-price">₹3,299</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- 2. Dynamic Product Catalog Grid (Shown for 'All', 'Streetwear', 'Accessories') -->
+                  <div class="app-products-catalog-grid" id="s3ProductsView">
+                    
+                    <!-- Product 1: Streetwear -->
+                    <div class="app-prod-card" data-category="streetwear" data-name="Aura Cyber Hoodie" data-price="2999">
+                      <div class="prod-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?q=80&w=400&auto=format&fit=crop" alt="Aura Cyber Hoodie" class="prod-img" loading="lazy" decoding="async">
+                        <span class="prod-tag">NEW</span>
+                      </div>
+                      <div class="prod-meta">
+                        <div class="prod-title-row">
+                          <span class="prod-name">Cyber Hoodie</span>
+                          <span class="prod-price">₹2,999</span>
+                        </div>
+                        <div class="prod-sub-row">
+                          <span class="prod-rating">★ 4.9</span>
+                          <button class="prod-add-btn" data-name="Cyber Hoodie" data-price="2999">+ ADD</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Product 2: Streetwear -->
+                    <div class="app-prod-card" data-category="streetwear" data-name="Modular Cargo Pant" data-price="3599">
+                      <div class="prod-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1517445312882-bc9910d016b7?q=80&w=400&auto=format&fit=crop" alt="Modular Cargo Pant" class="prod-img" loading="lazy" decoding="async">
+                        <span class="prod-tag">HOT</span>
+                      </div>
+                      <div class="prod-meta">
+                        <div class="prod-title-row">
+                          <span class="prod-name">Modular Cargo</span>
+                          <span class="prod-price">₹3,599</span>
+                        </div>
+                        <div class="prod-sub-row">
+                          <span class="prod-rating">★ 4.8</span>
+                          <button class="prod-add-btn" data-name="Modular Cargo" data-price="3599">+ ADD</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Product 3: Streetwear -->
+                    <div class="app-prod-card" data-category="streetwear" data-name="Acid Distressed Tee" data-price="1899">
+                      <div class="prod-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=400&auto=format&fit=crop" alt="Acid Distressed Tee" class="prod-img" loading="lazy" decoding="async">
+                      </div>
+                      <div class="prod-meta">
+                        <div class="prod-title-row">
+                          <span class="prod-name">Acid Wash Tee</span>
+                          <span class="prod-price">₹1,899</span>
+                        </div>
+                        <div class="prod-sub-row">
+                          <span class="prod-rating">★ 5.0</span>
+                          <button class="prod-add-btn" data-name="Acid Wash Tee" data-price="1899">+ ADD</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Product 4: Accessories -->
+                    <div class="app-prod-card" data-category="accessories" data-name="Matte Crossbody Bag" data-price="2199">
+                      <div class="prod-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=400&auto=format&fit=crop" alt="Matte Crossbody Bag" class="prod-img" loading="lazy" decoding="async">
+                        <span class="prod-tag" style="background:#22C55E;">LIMITED</span>
+                      </div>
+                      <div class="prod-meta">
+                        <div class="prod-title-row">
+                          <span class="prod-name">Crossbody Bag</span>
+                          <span class="prod-price">₹2,199</span>
+                        </div>
+                        <div class="prod-sub-row">
+                          <span class="prod-rating">★ 4.9</span>
+                          <button class="prod-add-btn" data-name="Crossbody Bag" data-price="2199">+ ADD</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Product 5: Accessories -->
+                    <div class="app-prod-card" data-category="accessories" data-name="Titanium Carabiner" data-price="999">
+                      <div class="prod-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400&auto=format&fit=crop" alt="Titanium Carabiner" class="prod-img" loading="lazy" decoding="async">
+                      </div>
+                      <div class="prod-meta">
+                        <div class="prod-title-row">
+                          <span class="prod-name">Ti-Carabiner</span>
+                          <span class="prod-price">₹999</span>
+                        </div>
+                        <div class="prod-sub-row">
+                          <span class="prod-rating">★ 4.7</span>
+                          <button class="prod-add-btn" data-name="Ti-Carabiner" data-price="999">+ ADD</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Product 6: Accessories -->
+                    <div class="app-prod-card" data-category="accessories" data-name="Cyberpunk Shades" data-price="2699">
+                      <div class="prod-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?q=80&w=400&auto=format&fit=crop" alt="Cyberpunk Shades" class="prod-img" loading="lazy" decoding="async">
+                        <span class="prod-tag">HOT</span>
+                      </div>
+                      <div class="prod-meta">
+                        <div class="prod-title-row">
+                          <span class="prod-name">Cyber Shades</span>
+                          <span class="prod-price">₹2,699</span>
+                        </div>
+                        <div class="prod-sub-row">
+                          <span class="prod-rating">★ 4.9</span>
+                          <button class="prod-add-btn" data-name="Cyber Shades" data-price="2699">+ ADD</button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Flying Cart Particle Animation Element -->
+                  <div class="fly-cart-dot" id="s3FlyDot"></div>
+
+                  <!-- Interactive Size Selection Bottom Drawer (Active in Lookbook view) -->
+                  <div class="app-lookbook-bottom" id="s3DrawerSheet">
+                    <div class="lookbook-drawer-row">
+                      <div class="drawer-product-mini">
+                        <div class="drawer-size-selector" id="s3SizeSelector">
+                          <span class="size-btn">S</span>
+                          <span class="size-btn size-m-chip active">M</span>
+                          <span class="size-btn">L</span>
+                        </div>
+                        <div class="drawer-color-dots">
+                          <span class="c-dot active" style="background:#080808; border:1px solid #FFF;"></span>
+                          <span class="c-dot" style="background:#E50000;"></span>
+                          <span class="c-dot" style="background:#94A3B8;"></span>
+                        </div>
+                      </div>
+                      <button class="drawer-add-btn" id="s3QuickAddBtn">
+                        <span id="s3AddText">QUICK ADD</span>
+                        <span id="s3AddIcon">+</span>
+                      </button>
+                    </div>
+                    
+                    <!-- Tab Bar -->
+                    <div class="app-tab-bar">
+                      <span class="tab-item active" id="s3TabHome">🏠 Home</span>
+                      <span class="tab-item" id="s3TabShop">👗 Shop</span>
+                      <span class="tab-item" id="s3TabBag">👜 Bag (<span id="s3TabBagNum">1</span>)</span>
+                      <span class="tab-item" id="s3TabProfile">👤 Profile</span>
+                    </div>
+                  </div>
+
+                  <!-- In-App Cart Slide-up Modal Drawer (Opens on bag click) -->
+                  <div class="app-in-cart-drawer" id="s3CartModal">
+                    <div class="in-cart-header">
+                      <div style="display:flex; align-items:center; gap:6px;">
+                        <span>SHOPPING BAG</span>
+                        <span class="in-cart-badge" id="s3CartModalBadge">1 ITEMS</span>
+                      </div>
+                      <button class="in-cart-close-btn" id="s3CartCloseBtn">✕</button>
+                    </div>
+                    
+                    <div class="in-cart-items-list" id="s3CartItemsList">
+                      <div class="in-cart-item-row">
+                        <div class="in-cart-item-info">
+                          <span class="in-cart-item-name">Aura Oversized Top</span>
+                          <span class="in-cart-item-meta">Size: M • Black</span>
+                        </div>
+                        <span class="in-cart-item-price">₹2,499</span>
+                      </div>
+                    </div>
+
+                    <div class="in-cart-footer">
+                      <div class="in-cart-subtotal-row">
+                        <span>TOTAL</span>
+                        <span class="in-cart-subtotal-price" id="s3CartTotalPrice">₹2,499.00</span>
+                      </div>
+                      <button class="in-cart-checkout-btn" id="s3CheckoutBtn">
+                        <span>CHECKOUT ( PAY)</span>
+                        <span>→</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Screen 4: Neural AI Assistant (Real-time Voice & Multimodal Audio Waveform) -->
+            <div 
+              class="mobile-phone-card" 
+              id="appCard4"
+              data-title="NEURAL AI — VOICE & VISION AGENT"
+              data-cat-label="Autonomous Audio & Multimodal LLM"
+              data-year="2025"
+              data-desc="Real-time conversational AI system with responsive audio spectrogram waveform graphics, low-latency live streaming voice pipeline, and multimodal vision analysis."
+              data-img="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=800&auto=format&fit=crop"
+            >
+              <div class="phone-device-frame">
+                <div class="phone-dynamic-island"></div>
+                <div class="phone-status-bar">
+                  <span>9:41</span>
+                  <div class="phone-status-icons">
+                    <span>5G</span>
+                    <span style="font-size: 0.65rem;">100%</span>
+                  </div>
+                </div>
+                
+                <div class="phone-screen-content app-screen-4" id="s4ScreenContent">
+                  
+                  <!-- Screen 4 Interactive Demo Cursor -->
+                  <div class="phone-neon-cursor cursor-clean" id="s4NeonCursor">
+                    <svg class="neon-cursor-svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path d="M4 3L11 21L14.5 13.5L22 10L4 3Z" fill="#111116" stroke="#FFFFFF" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="neon-cursor-pulse"></div>
+                  </div>
+
+                  <!-- Top Bar: Neural AI Indicator + Model Badge -->
+                  <div class="app-top-nav ai-top-nav">
+                    <div class="ai-agent-badge">
+                      <div class="ai-avatar-glow">🤖</div>
+                      <div>
+                        <div class="ai-name-label">Neural AI v4.2</div>
+                        <div class="ai-status-row">
+                          <span class="pulse-green-dot" id="s4StatusDot"></span>
+                          <span class="ai-live-tag" id="s4LiveTag">ONLINE • MULTIMODAL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Conversational Chat Messages Stream Area -->
+                  <div class="ai-chat-stream-box" id="s4ChatStream">
+                    
+                    <!-- Bot Welcome Message -->
+                    <div class="ai-msg bot">
+                      <div class="ai-msg-avatar">⚡</div>
+                      <div class="ai-msg-bubble">
+                        <span>Hello! I am your autonomous creative intelligence. What can I engineer for you today?</span>
+                      </div>
+                    </div>
+
+                    <!-- Quick Prompt Suggestion Chips -->
+                    <div class="ai-prompt-chips" id="s4PromptChips">
+                      <button class="prompt-chip" data-prompt="Design modern 3D villa with cantilever roof">✨ 3D Villa Concept</button>
+                      <button class="prompt-chip" data-prompt="Generate minimal dark luxury color palette">🎨 Luxury Palette</button>
+                      <button class="prompt-chip" data-prompt="Write WebGL raymarching fragment shader">⚡ WebGL Shader</button>
+                      <button class="prompt-chip" data-prompt="Analyze creative campaign conversion rates">📊 Campaign ROI</button>
+                    </div>
+
+                    <!-- Dynamic Chat Messages Thread Container -->
+                    <div class="ai-chat-thread" id="s4ChatThread">
+                      <!-- Dynamically added messages -->
+                    </div>
+
+                    <!-- Typing Indicator Animation -->
+                    <div class="ai-msg bot typing" id="s4TypingRow" style="display: none;">
+                      <div class="ai-msg-avatar">⚡</div>
+                      <div class="ai-msg-bubble typing-bubble">
+                        <div class="typing-dots">
+                          <span></span><span></span><span></span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Real-time Audio Waveform Visualizer (Shown during voice input) -->
+                    <div class="ai-voice-wave-card" id="s4VoiceWaveCard" style="display: none;">
+                      <div class="voice-wave-header">
+                        <span class="pulse-purple-dot"></span>
+                        <span id="s4VoiceStatusText">LISTENING TO VOICE AUDIO...</span>
+                      </div>
+                      <div class="ai-waveform-container" id="s4Waveform">
+                        <div class="wave-bar w1"></div>
+                        <div class="wave-bar w2"></div>
+                        <div class="wave-bar w3"></div>
+                        <div class="wave-bar w4"></div>
+                        <div class="wave-bar w5"></div>
+                        <div class="wave-bar w6"></div>
+                        <div class="wave-bar w7"></div>
+                        <div class="wave-bar w8"></div>
+                        <div class="wave-bar w9"></div>
+                        <div class="wave-bar w10"></div>
+                        <div class="wave-bar w11"></div>
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <!-- Bottom UI: Clean Sleek Input Bar -->
+                  <div class="app-ai-bottom">
+                    <div class="ai-input-bar">
+                      <input type="text" placeholder="Type a message or prompt..." class="ai-real-input prompt-input-field" id="s4TextInput" />
+                      <button class="ai-mic-btn" id="s4SpeakBtn" title="Voice Input">🎙️</button>
+                      <button class="ai-send-btn" id="s4SendBtn" title="Send Message">↑</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+  <!-- ==========================================================================
+       TEAM SECTION — 5 MONOLITHIC EXPERTS STAGE (CINEMATIC HOVER REVEAL)
+       ========================================================================== -->
+  <section class="section team-monolith-section" id="team">
+    <div class="container">
+      <!-- Section Header matching reference image -->
+      <div class="team-monolith-header">
+        <div class="team-monolith-title-box">
+          <h2 class="team-monolith-title">
+            WE ARE A <span class="title-highlight-red">TEAM</span> OF<br />
+            THINKERS, MAKERS &amp;<br />
+            PROBLEM SOLVERS
+          </h2>
+        </div>
+        <div class="team-monolith-meta-box">
+          <div class="section-label" style="margin-bottom: 0.75rem; justify-content: flex-end;">
+            <span>[ OUR TEAM ]</span>
+          </div>
+          <p class="team-monolith-desc">
+            Our team is a mix of tech enthusiasts, creative minds, and data-driven experts crafting high-impact digital experiences.
+          </p>
+        </div>
+      </div>
+
+      <!-- 4 Curved Monolith Stage Container -->
+      <div class="team-monolith-stage-wrap">
+        <div class="team-monolith-cards-row">
+          
+          <!-- Card 1: Pavan Sudhikonda -->
+          <div class="monolith-card" data-index="0">
+            <div class="monolith-light-panel">
+              <!-- Default Silhouette View -->
+              <div class="monolith-silhouette-bg">
+                <img src="assets/avatar-1.png" alt="Pavan Sudhikonda Silhouette" class="monolith-silhouette-img" loading="lazy" decoding="async">
+                <div class="monolith-text-overlay">
+                  <h3 class="monolith-member-name">PAVAN SUDHIKONDA</h3>
+                  <div class="monolith-member-role">2D &amp; 3D ANIMATOR</div>
+                  <p class="monolith-member-desc">
+                    Bringing Ideas to Life, in 2D and 3D.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Hover Full Photo Reveal -->
+              <div class="monolith-real-photo">
+                <img src="assets/team_member_1.jpg" alt="Pavan Sudhikonda" loading="lazy" decoding="async">
+                <div class="monolith-photo-overlay">
+                  <div class="monolith-text-overlay photo-active">
+                    <h3 class="monolith-member-name">PAVAN SUDHIKONDA</h3>
+                    <div class="monolith-member-role">2D &amp; 3D ANIMATOR</div>
+                    <p class="monolith-member-desc">
+                      Bringing Ideas to Life, in 2D and 3D.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Rakesh Kondasani -->
+          <div class="monolith-card" data-index="1">
+            <div class="monolith-light-panel">
+              <div class="monolith-silhouette-bg">
+                <img src="assets/avatar-2.png" alt="Rakesh Kondasani Silhouette" class="monolith-silhouette-img" loading="lazy" decoding="async">
+                <div class="monolith-text-overlay">
+                  <h3 class="monolith-member-name">RAKESH KONDASANI</h3>
+                  <div class="monolith-member-role">TECH LEAD</div>
+                  <p class="monolith-member-desc">
+                    Turning ideas into scalable solutions.
+                  </p>
+                </div>
+              </div>
+
+              <div class="monolith-real-photo">
+                <img src="assets/team_member_2.jpg" alt="Rakesh Kondasani" loading="lazy" decoding="async">
+                <div class="monolith-photo-overlay">
+                  <div class="monolith-text-overlay photo-active">
+                    <h3 class="monolith-member-name">RAKESH KONDASANI</h3>
+                    <div class="monolith-member-role">TECH LEAD</div>
+                    <p class="monolith-member-desc">
+                      Turning ideas into scalable solutions.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Sudheer -->
+          <div class="monolith-card" data-index="2">
+            <div class="monolith-light-panel">
+              <div class="monolith-silhouette-bg">
+                <img src="assets/avatar-4.png" alt="Sudheer Silhouette" class="monolith-silhouette-img" loading="lazy" decoding="async">
+                <div class="monolith-text-overlay">
+                  <h3 class="monolith-member-name">SUDHEER</h3>
+                  <div class="monolith-member-role">FOUNDER &amp; CEO | GRAPHIC DESIGNER</div>
+                  <p class="monolith-member-desc">
+                    Where Vision Meets Design.
+                  </p>
+                </div>
+              </div>
+
+              <div class="monolith-real-photo">
+                <img src="assets/team_member_3.jpg" alt="Sudheer" loading="lazy" decoding="async">
+                <div class="monolith-photo-overlay">
+                  <div class="monolith-text-overlay photo-active">
+                    <h3 class="monolith-member-name">SUDHEER</h3>
+                    <div class="monolith-member-role">FOUNDER &amp; CEO | GRAPHIC DESIGNER</div>
+                    <p class="monolith-member-desc">
+                      Where Vision Meets Design.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Sai Pavan -->
+          <div class="monolith-card" data-index="3">
+            <div class="monolith-light-panel">
+              <div class="monolith-silhouette-bg">
+                <img src="assets/avatar-5.png" alt="Sai Pavan Silhouette" class="monolith-silhouette-img" loading="lazy" decoding="async">
+                <div class="monolith-text-overlay">
+                  <h3 class="monolith-member-name">SAI PAVAN</h3>
+                  <div class="monolith-member-role">VIDEO EDITOR</div>
+                  <p class="monolith-member-desc">
+                    Turning Moments into Stories.
+                  </p>
+                </div>
+              </div>
+
+              <div class="monolith-real-photo">
+                <img src="assets/team_member_4.jpg" alt="Sai Pavan" loading="lazy" decoding="async">
+                <div class="monolith-photo-overlay">
+                  <div class="monolith-text-overlay photo-active">
+                    <h3 class="monolith-member-name">SAI PAVAN</h3>
+                    <div class="monolith-member-role">VIDEO EDITOR</div>
+                    <p class="monolith-member-desc">
+                      Turning Moments into Stories.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       TESTIMONIALS / RESULTS SECTION
+       ========================================================================== -->
+  <section class="section testimonial-section">
+    <div class="container testimonial-container">
+      <div class="section-label">
+        <span>CLIENT IMPACT</span>
+      </div>
+
+      <div class="testimonial-slider-wrap">
+        <!-- Testimonial Slide 1 -->
+        <div class="testimonial-slide active" data-slide="0">
+          <div class="testimonial-quote-mark">“</div>
+          <p class="testimonial-quote-text">
+            kreativxmedia didn't just redesign our brand — they fundamentally redefined our position in the market. Our enterprise revenue grew 340% in the first 6 months post-launch.
+          </p>
+          <div class="testimonial-client-row">
+            <div class="client-info">
+              <h4>Julian Thorne</h4>
+              <p>Founder & CEO, Neura Cognitive Labs</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Slide 2 -->
+        <div class="testimonial-slide" data-slide="1">
+          <div class="testimonial-quote-mark">“</div>
+          <p class="testimonial-quote-text">
+            Working with kreativxmedia was the single highest ROI investment we made all year. Their editorial precision, technical mastery, and creative fearlessness are unmatched.
+          </p>
+          <div class="testimonial-client-row">
+            <div class="client-info">
+              <h4>Sophia Lin</h4>
+              <p>Managing Director, Aura Haute Couture Group</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial Slide 3 -->
+        <div class="testimonial-slide" data-slide="2">
+          <div class="testimonial-quote-mark">“</div>
+          <p class="testimonial-quote-text">
+            Their team executed our complex WebGL platform on schedule with zero compromises. They are true craftsmen in an era of generic templates.
+          </p>
+          <div class="testimonial-client-row">
+            <div class="client-info">
+              <h4>David K. Ross</h4>
+              <p>Chief Technology Officer, Vault Quantum Systems</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       FINAL CTA SECTION — THICK RED
+       ========================================================================== -->
+  <section class="final-cta-section" id="contact">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 class="cta-headline">
+          HAVE A BIG IDEA? <br />
+          LET'S MAKE IT <br />
+          IMPOSSIBLE TO IGNORE.
+        </h2>
+        <div class="cta-btn-wrapper">
+          <button class="btn btn-cta-dark open-modal-btn" data-modal="inquiryModal">
+            <span>Start A Project</span>
+            <span>→</span>
+          </button>
+          <a href="mailto:contact@kreativxmedia.com" class="btn btn-cta-white">
+            <span>Email Directly</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ==========================================================================
+       MINIMAL PREMIUM FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <!-- Col 1: Brand & Philosophy -->
+        <div class="footer-brand-col">
+          <div class="footer-logo-wrap">
+            <img src="assets/logo.png?v=12.0" alt="KREATIVX logo" style="width: 28px; height: 28px; object-fit: contain; border-radius: 5px;" loading="lazy" decoding="async">
+            <a href="#" class="footer-logo">
+              <span>KREATIV<span class="logo-x">X</span></span>
+            </a>
+          </div>
+          <p class="footer-statement">
+            A premier creative and digital agency engineering high-impact brands, websites, animations, and cultural campaigns.
+          </p>
+        </div>
+
+        <!-- Col 2: Inquiries & Headquarters (Moved to Right Side) -->
+        <div class="footer-col-collab">
+          <div class="footer-col-title">Want to Collab</div>
+          <ul class="footer-link-list">
+            <li><a href="mailto:contact@kreativxmedia.com" class="footer-link accent-hover">contact@kreativxmedia.com</a></li>
+            <li><a href="tel:+917288069769" class="footer-link">+91 7288069769</a></li>
+            <li style="margin-top: 0.85rem; color: var(--text-muted); font-size: 0.85rem; line-height: 1.5;">
+              London • New York • Tokyo<br />
+              Accepting Global Projects
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Row: Copyright, Social Icons, Back to Top -->
+      <div class="footer-bottom-row">
+        <div class="footer-copyright">
+          © 2026 KREATIV<span class="logo-x">X</span>. All rights reserved.
+        </div>
+
+        <!-- Social Media Icons in Bottom Footer -->
+        <div class="footer-social-icons">
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon-btn" aria-label="Instagram" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon-btn" aria-label="LinkedIn" title="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="https://behance.net" target="_blank" rel="noopener noreferrer" class="footer-social-icon-btn" aria-label="Behance" title="Behance">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8.228 15.01c.545 0 1.02-.114 1.428-.344.407-.23.714-.55.918-.958.204-.41.307-.887.307-1.433 0-.6-.12-1.11-.36-1.53-.24-.42-.583-.733-1.03-.94.348-.19.623-.46.824-.808.202-.347.303-.762.303-1.246 0-.53-.105-.98-.314-1.35-.21-.37-.506-.65-.89-.843-.383-.19-.844-.287-1.38-.287H2.5v9.74h5.728zm-3.41-5.74h2.72c.49 0 .88.11 1.17.33.29.22.435.53.435.93 0 .42-.15.74-.45.96-.3.22-.72.33-1.26.33H4.818V9.27zm0 4.02h2.95c.57 0 1.01.12 1.32.36.31.24.465.58.465 1.02 0 .46-.16.82-.48 1.08-.32.26-.79.39-1.41.39H4.818v-2.85zm12.384 1.72c.38 0 .72-.08 1.02-.24.3-.16.53-.39.69-.69l1.62 1.05c-.38.58-.88 1.02-1.5 1.32-.62.3-1.34.45-2.16.45-1.02 0-1.92-.22-2.7-.66-.78-.44-1.38-1.06-1.8-1.86-.42-.8-.63-1.74-.63-2.82 0-1.06.21-2 .63-2.82.42-.82 1.02-1.45 1.8-1.89.78-.44 1.68-.66 2.7-.66.98 0 1.84.21 2.58.63.74.42 1.31 1.02 1.71 1.8.4.78.6 1.7.6 2.76v.84h-7.77c.06.78.36 1.41.9 1.89.54.48 1.23.72 2.07.72zm-.27-5.46c-.66 0-1.19.19-1.59.57-.4.38-.63.9-.69 1.56h4.56c-.04-.66-.26-1.18-.66-1.56-.4-.38-.94-.57-1.62-.57zm-1.86-3.81h4.29v1.26h-4.29V5.74z"/></svg>
+          </a>
+        </div>
+
+        <div>
+          <button class="back-to-top-btn" id="backToTopBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Scroll to top of page">
+            <span>Back To Top</span>
+            <span>↑</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==========================================================================
+       INTERACTIVE PROJECT INQUIRY MODAL
+       ========================================================================== -->
+  <div class="modal-backdrop" id="inquiryModal">
+    <div class="modal-window">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">✕</button>
+
+      <div class="modal-header">
+        <div class="section-label" style="margin-bottom: 0.5rem;">
+          <span>INITIATE COLLABORATION</span>
+        </div>
+        <h3 class="modal-title">START A PROJECT</h3>
+        <p class="modal-desc">
+          Tell us about your brand vision, scope, and timeline. We respond to qualified inquiries within 24 hours.
+        </p>
+      </div>
+
+      <form class="inquiry-form" id="projectInquiryForm">
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="clientName">Your Name *</label>
+            <input type="text" id="clientName" class="form-input" placeholder="e.g. Alexander Cole" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="clientPhone">Mobile Number *</label>
+            <input type="tel" id="clientPhone" class="form-input" placeholder="e.g. 9876543210" pattern="[0-9]{10}" maxlength="10" inputmode="numeric" title="Please enter a valid 10-digit mobile number" required />
+          </div>
+        </div>
+
+        <div class="form-row-2">
+          <div class="form-group">
+            <label class="form-label" for="clientEmail">Email Address *</label>
+            <input type="email" id="clientEmail" class="form-input" placeholder="alex@company.com" autocapitalize="none" spellcheck="false" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="clientCompany">Company / Brand</label>
+            <input type="text" id="clientCompany" class="form-input" placeholder="e.g. Apex Innovations" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="projectBudget">Estimated Budget Range</label>
+          <select id="projectBudget" class="form-select">
+            <option value="₹500 – ₹1,500">₹500 – ₹1,500</option>
+            <option value="₹1,500 – ₹5,000">₹1,500 – ₹5,000</option>
+            <option value="₹5,000 – ₹25,000">₹5,000 – ₹25,000</option>
+            <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+            <option value="₹50,000 – ₹1,50,000" selected>₹50,000 – ₹1,50,000</option>
+            <option value="₹1,50,000 – ₹5,00,000">₹1,50,000 – ₹5,00,000</option>
+            <option value="₹5,00,000+">₹5,00,000+ (Enterprise)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Services Required (Select All That Apply)</label>
+          <div class="service-checkbox-grid">
+            <label class="service-check-item">
+              <input type="checkbox" name="services" value="Graphic Design" />
+              <span>Graphic Design</span>
+            </label>
+            <label class="service-check-item">
+              <input type="checkbox" name="services" value="Video Production & Editing" />
+              <span>Video Production</span>
+            </label>
+            <label class="service-check-item">
+              <input type="checkbox" name="services" value="Brand Identity & Logo Design" />
+              <span>Brand & Logo</span>
+            </label>
+            <label class="service-check-item">
+              <input type="checkbox" name="services" value="Web, 2D & 3D Experiences" />
+              <span>Web, 2D & 3D</span>
+            </label>
+            <label class="service-check-item">
+              <input type="checkbox" name="services" value="Mobile App Development" />
+              <span>Mobile App Dev</span>
+            </label>
+            <label class="service-check-item">
+              <input type="checkbox" name="services" value="AI Automation & Integrations" />
+              <span>AI Automation</span>
+            </label>
+            <label class="service-check-item">
+              <input type="checkbox" name="services" value="Digital Marketing & Growth" />
+              <span>Digital Marketing</span>
+            </label>
+            <label class="service-check-item">
+              <input type="checkbox" name="services" value="2D & 3D Animation" />
+              <span>2D & 3D Animation</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+            <label class="form-label" for="projectDetails" style="margin-bottom: 0;">Project Overview &amp; Goals</label>
+            <span id="descCharCount" style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted);">0 / 500</span>
+          </div>
+          <textarea id="projectDetails" class="form-textarea" rows="4" maxlength="500" placeholder="Briefly describe your objectives, deliverables, and target launch date (max 500 characters)..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 0.5rem;">
+          <span>Submit Project Inquiry</span>
+          <span>→</span>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <div class="quickview-modal-backdrop" id="quickViewModal">
+    <div class="quickview-card">
+      <button class="quickview-close" id="quickViewClose" aria-label="Close Case Study Modal">✕</button>
+      <div class="quickview-media">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E" alt="" class="quickview-img" id="qvImage" loading="lazy" decoding="async">
+      </div>
+      <div class="quickview-details">
+        <div>
+          <div class="section-label" style="margin-bottom: 0.5rem;">
+            <span id="qvCategory">CASE STUDY</span>
+          </div>
+          <h3 style="font-size: 2rem; font-weight: 900; margin-bottom: 0.5rem;" id="qvTitle">PROJECT TITLE</h3>
+          <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent); margin-bottom: 1.5rem;" id="qvMeta">
+            2025 • BRANDING & DIGITAL
+          </div>
+          <p style="color: var(--text-muted); line-height: 1.65; margin-bottom: 2rem;" id="qvDescription">
+            Project description.
+          </p>
+        </div>
+        <div>
+          <button class="btn btn-primary" onclick="openServiceInquiryFromQV()">
+            <span>Inquire Similar Project</span>
+            <span>→</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Toast Feedback Notification -->
+  <div class="toast-notification" id="toastNotification">
+    <i data-lucide="check-circle" style="color: var(--accent);"></i>
+    <div>
+      <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 0.1rem;" id="toastTitle">Inquiry Received!</h4>
+      <p style="font-size: 0.8125rem; color: #CCCCCC;" id="toastMessage">Our creative director will review your brief and contact you shortly.</p>
+    </div>
+  </div>
+
+  <!-- Lucide Icons -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.min.js"></script>
+
+  <!-- GSAP Core & ScrollTrigger Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- JavaScript Modules -->
+  <script src="main.js?v=103.0"></script>
+</body>
+</html>
